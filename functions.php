@@ -55,9 +55,27 @@ add_action('init', 'macsc_theme_setup');
 // ====================================
 //  THEME SUPPORT
 // ====================================
-add_theme_support('custom-background');
-add_theme_support('custom-header');
 add_theme_support('post-thumbnails');
-add_theme_support('post-formats', array('aside', 'image', 'video'));
+
+// ====================================
+//  SIDEBAR FUNCTION
+// ====================================
+
+function macsc_widget_setup() {
+
+	register_sidebar(array(
+		'name'          => 'Sidebar',
+		'id'            => 'sidebar-1',
+		'class'         => 'custom',
+		'description'   => 'Standard Sidebar',
+		'before_widget' => '<li id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</li>',
+		'before_title'  => '<h2 class="widgettitle">',
+		'after_title'   => '</h2>'
+	));
+
+}
+
+add_action('widgets_init','macsc_widget_setup')
 
 ?>

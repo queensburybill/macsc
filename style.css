@@ -1,5 +1,5 @@
 /*
-	Theme Name: macsc
+	Theme Name: macsc-theme
 	Theme URI: localhost:8888/macsc
 	Author: Albany Can Code
 	Author URI: https://albanycancode.org/
@@ -8,11 +8,58 @@
 	Description: Mechanicville Area Community Services Center Website
 */
 
+
+.container-footer {
+	background-color: #eee;
+	padding: 20px 0;
+}
+
+/* ===========================================
+    BOOTSTRAP OVERRIDES
+   ==========================================*/
 .container-fluid-macsc {
 	padding-left: 0;
 	padding-right: 0;
 }
 
-body{
-	color: green;
+.carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+}
+
+.carousel {
+	overflow: hidden;
+	width: 100%;
+}
+
+.carousel-inner {
+	min-width: 600px;
+	height: 480px;
+}
+
+.carousel-inner.carousel-item img {
+	overflow: hidden;
+	width: 100%;
+}
+
+.carousel-caption a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.carousel-caption a:hover {
+	color: #89b2df;
+}
+
+@media screen and (max-width: 767px) {
+	.carousel-inner {
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 401px) {
+	.carousel-inner {
+		height: 220px;
+	}
 }
