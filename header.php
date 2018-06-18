@@ -6,6 +6,8 @@
 		<?php wp_head(); ?>
 	</head>
 
+
+	<!-- Use this code if you want to differentiate styles between the front page and the rest of your pages. See Tutorial part 5 @ 14:00. https://www.youtube.com/watch?v=pJ4NTBdvyj4&t=321s  -->
 	<?php
 
 		if( is_front_page() ):

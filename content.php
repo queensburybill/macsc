@@ -12,7 +12,8 @@
 			<div class="col-xs-12 col-sm-4">
 				<div class="thumbnail"><?php the_post_thumbnail('medium'); ?></div>
 			</div>
-			<div class="col-xs-12 col-sm-8">
+			<div class="col-xs-12">
+				<?php the_title(); ?>
 				<?php the_content(); ?>
 			</div>
 
