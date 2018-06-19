@@ -5,7 +5,6 @@ html,body {margin: 0;}
 
 * {
     box-sizing: border-box;
-    background: #FDFDFD;
     font-family: Arial, sans-serif;
     /* border: 1px #000 solid; */
 }
@@ -31,19 +30,27 @@ header{
   display: block;
   float: left;
   width: 100%;
-  /* background:#FDFDFD; */
 }
 
 .logo {
     float: left;
     width: 25%;
-    padding: 0 0 0 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
 }
 
 .company{
     display: block;
     float: left;
     width: 50%;
+    margin: 80px 0;
+    text-align: center;
+    /* border: 1px black solid; */
 }
 
 .righter {
@@ -51,7 +58,7 @@ header{
     display: block;
     width: 25%;
     margin: 0;
-    padding-right: 20px;
+    padding: 0;
     font-size: 12px;
     background: #fff;
     text-decoration: none;
@@ -67,11 +74,17 @@ header{
 .links {
     float: right;
     display: block;
+    margin: 0;
+    padding: 0;
     list-style: none;
     text-decoration: none;
 }
 
-#facebook {
+.links a{
+    text-align: right;
+}
+
+#glyph {
     font-size: 20px;
     float: right;
     display: block;
@@ -82,83 +95,40 @@ header{
 /* ------------------------------------------- */
 /* ------------------------------------------- */
 
-nav {
-  display: block;
-  float: left;
-  width: 100%;
-  font-size: 14px;
+#nav1 {
+    background: #e35e01;
+    color: #fff;
 }
 
-.nav {
-  display: block;
-  float: left;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  width: 100%;
-  position: relative;
-  background: #8EDAF0;
-
+#nav1 a:hover {
+    background: #c75403;
+    color: #fff;
 }
 
-li a {
-    display: block;
-    width: 100%;
-    color: #000;
-    padding-bottom: 5px;
-    text-decoration: none;
-    text-align: left;
+#nav2 {
+    background: #feac00;
 }
 
-.nav li a:hover {
-    background-color: #8EDAF0;
-    color: #FFF;
-
+#nav2 a:hover {
+    background: #e79a00;
 }
 
-/* .active {
-    background-color: #8EDAF0;
-} */
-
-.dropbtn {
-    background: #8EDAF0;
-    color: #000;
-    padding: 14px;
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
+#nav3 {
+    background: #64c4b8;
 }
 
-.dropbtn a{
-    background: #8EDAF0;
+#nav3 a:hover {
+    background: #65afa2;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+#nav4 {
+    background: #ff9000;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background: #8EDAF0;
-    /* min-width: 160px; */
-    box-shadow: 0 8px 16px 0;
-    z-index: 1;
-    font-size: 12px;
+#nav4 a:hover {
+    background: #e48102;
 }
 
-.dropdown-content a{
-    background: #8EDAF0;
-    color: #000;
-    padding: 10px 14px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 
 /* EVENTS */
@@ -168,7 +138,7 @@ li a {
 .events {
     display: inline-block;
     float: left;
-    margin: 0;
+    margin: 10px 0 0 0;
     padding-top: 90px;
     width: 100%;
     height: 200px;
@@ -179,7 +149,7 @@ li a {
 .calendar {
     display: block;
     float: left;
-    margin: 0;
+    margin: 10px 0;
     padding-top: 120px;
     width: 50%;
     height: 250px;
@@ -190,7 +160,7 @@ li a {
 .facebook{
     display: block;
     float: right;
-    margin: 0;
+    margin: 10px 0;
     padding-top: 120px;
     width: 50%;
     height: 250px;
