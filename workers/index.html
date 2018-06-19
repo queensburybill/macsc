@@ -4,8 +4,8 @@
         <meta charset="utf-8">
 
 <!-- BEGIN: bootstrap CDN -->
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 <!-- END: bootstrap CDN -->
 
 
@@ -21,7 +21,7 @@
         <header>
             <div class="wrapper">
                 <div class="logo">
-                    <a href="#"><img src="http://via.placeholder.com/100x100"></a>
+                    <a href="#"><img src="http://via.placeholder.com/200x200"></a>
                 </div>
 
                 <div class="company">
@@ -32,7 +32,7 @@
                     <ul class="links">
                         <li><a href="#">Newsletter Sign-up</a></li>
                         <li><a href="#">Donate</a></li>
-                        <li id="facebook"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li id="glyph"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
 
                     </ul>
                 </div>
@@ -43,100 +43,91 @@
 
 
 <!-- BEGIN: nav -->
-    <div class="wrapper">
-        <nav>
-            <ul class="nav">
+<div class="container">
+    <nav class="navbar navbar-expand-md">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+            <i class="fas fa-bars"></i>
+        </span>
+      </button>
 
-                    <!-- The logo can also be a link to the landing page. - KB -->
-                <li class="dropdown">
-                    <button class="dropbtn"><a href="#">Home</a></button>
-                </li>
-                    <!--  -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
 
-                <li class="dropdown">
-                    <button class="dropbtn">Who We Are</button>
-                    <div class="dropdown-content">
-                        <a href="#">History & Mission</a>
-                        <a href="#">Board of Directors</a>
-                        <a href="#">MACSC Staff</a>
-                        <a href="#">Corporate Partners</a>
-                        <a href="#">Contact Us</a>
-                        <a href="#">Directions</a>
-                    </div>
-                </li>
+          <li class="nav-item dropdown" id="nav1">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Who We Are
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="nav1">
+              <a class="dropdown-item" href="#">History & Mission</a>
+              <a class="dropdown-item" href="#">Board of Directors</a>
+              <a class="dropdown-item" href="#">MASCS Staff</a>
+              <a class="dropdown-item" href="#"> Corporate Partners</a>
+              <a class="dropdown-item" href="#">Contact Us</a>
+              <a class="dropdown-item" href="#">Directions</a>
+            </div>
+          </li>
 
-                <li class="dropdown">
-                    <button class="dropbtn">What We Do</button>
-                    <div class="dropdown-content">
-                        <a href="#">Domestic Violence</a>
-                        <a href="#">Food & Nurtition</a>
-                        <a href="#">Family Development</a>
-                        <a href="#">School Aged Child Care</a>
-                        <a href="#">Seniors Living Well</a>
-                        <a href="#">Youth Development</a>
-                        <a href="#">Facility Usage</a>
-                    </div>
-                </li>
+          <li class="nav-item dropdown" id="nav2">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              What We Do
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="nav2">
+              <a class="dropdown-item" href="#">Domestic Violence</a>
+              <a class="dropdown-item" href="#">Food & Nutrition</a>
+              <a class="dropdown-item" href="#">Family Development</a>
+              <a class="dropdown-item" href="#">School Aged Child Care</a>
+              <a class="dropdown-item" href="#">Seniors Living Well</a>
+              <a class="dropdown-item" href="#">Youth Development</a>
+              <a class="dropdown-item" href="#">Facility Usage</a>
+            </div>
+          </li>
 
-                <li class="dropdown">
-                    <button class="dropbtn">Get Help</button>
-                    <div class="dropdown-content">
-                        <a href="#">Food Pantry</a>
-                        <a href="#">Summer Meals</a>
-                        <a href="#">Free Market</a>
-                        <!-- Should Plants 4 Pantry drop down from Free Market? Wasn't clear from list. - KB -->
-                        <a href="#">Plants 4 Pantry</a>
-                        <!--  -->
-                        <a href="#">Lobby Food</a>
-                        <a href="#">DV Hotline</a>
-                        <a href="#">Advocacy</a>
-                        <a href="#">Legal Clinics</a>
-                        <a href="#">Child Care</a>
-                        <a href="#">Senior Advocacy</a>
-                        <a href="#">WIC Clinics</a>
-                        <a href="#">On-Site Counseling</a>
-                        <a href="#">Info & Referrals</a>
-                        <a href="#">Health Insurance Enrollment</a>
-                        <a href="#">VITA Free Income Tax Prep</a>
-                        <a href="#">Holiday Assistance</a>
-                        <a href="#">School Supplies</a>
-                        <a href="#">After School Clubs</a>
-                        <a href="#">Open Gym</a>
-                        <a href="#">Emergency Assistance</a>
-                    </div>
-                </li>
+          <li class="nav-item dropdown" id="nav3">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Get Help
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="nav3">
+              <a class="dropdown-item" href="#">Food Pantry</a>
+              <a class="dropdown-item" href="#">Summer Meals</a>
+              <a class="dropdown-item" href="#">Free Market</a>
+              <a class="dropdown-item" href="#">Plants 4 Pantry Partnership</a>
+              <a class="dropdown-item" href="#">Lobby Food</a>
+              <a class="dropdown-item" href="#">Domestic Violence Hotline</a>
+              <a class="dropdown-item" href="#">Advocacy</a>
+              <a class="dropdown-item" href="#">Legal Clinics</a>
+              <a class="dropdown-item" href="#">Childcare</a>
+              <a class="dropdown-item" href="#">Senior Advocacy</a>
+              <a class="dropdown-item" href="#">WIC Clinics</a>
+              <a class="dropdown-item" href="#">Onsite Counseling</a>
+              <a class="dropdown-item" href="#">Info & Referrals</a>
+              <a class="dropdown-item" href="#">Health Insurance Enrollment</a>
+              <a class="dropdown-item" href="#">VITA Free Income Tax Prep</a>
+              <a class="dropdown-item" href="#">Holiday Assistance</a>
+              <a class="dropdown-item" href="#">School Supplies</a>
+              <a class="dropdown-item" href="#">After School Clubs</a>
+              <a class="dropdown-item" href="#">Open Gym</a>
+              <a class="dropdown-item" href="#">Emergency Assistance</a>
+            </div>
+          </li>
 
-                <li class="dropdown">
-                    <button class="dropbtn">Get Involved</button>
-                    <div class="dropdown-content">
-                        <a href="#">Volunteer</a>
-                        <a href="#">Donate</a>
-                        <a href="#">Employment</a>
-                        <a href="#">Partnership</a>
-                    </div>
-                </li>
+          <li class="nav-item dropdown" id="nav4">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Get Involved
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="nav4">
+              <a class="dropdown-item" href="#">Volunteer</a>
+              <a class="dropdown-item" href="#">Donate</a>
+              <a class="dropdown-item" href="#">Employment</a>
+            </div>
+          </li>
 
-                <li class="dropdown">
-                    <button class="dropbtn"><a href="#">Calendar</a></button>
-                </li>
-
-
-            <!-- EXTRA DROPDOWN TEMPLATE -->
-            <!-- <div class="dropdown">
-                <button class="dropbtn"> </button>
-                <div class="dropdown-content">
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                </div>
-            </div> -->
-
-            </ul>
-
-            <div class="clearfix"></div>
-        </nav>
-    </div>
+          <li class="nav-item active" id="nav5">
+            <a class="nav-link" href="#">Calendar <span class="sr-only">(current)</span></a>
+          </li>
+      </div>
+    </nav>
+</div>
 <!-- END: nav -->
 
 <!-- BEGIN: body -->
@@ -185,9 +176,9 @@
 
 
 <!-- BEGIN: bootstrap javascript -->
-        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 <!-- END: bootstrap javascript -->
     </body>
 </html>
