@@ -22,6 +22,15 @@
 							'type' => 'post',
 							'posts_per_page' => -1,
 							// 'offset' => 1,   this exludes the first post
+
+							//Used to select only the image posts
+							'tax_query' => array(
+								array(
+									'taxonomy' => 'post_format',
+									'field' => 'slug',
+									'terms' => 'post-format-image',
+								)
+							)
 						);
 						$sliders = new WP_Query($args);
 
@@ -40,7 +49,11 @@
 									</div>
 								</div>
 
-								<?php $bullets .= '<li data-target="#macscCarousel" data-slide-to="'.$count.'" class="active"></li>'; ?>
+								<?php $bullets .= '<li data-target="#macscCarousel" data-slide-to="'.$count.'" class="'; ?>
+
+                                <?php if($count == 0): $bullets .= 'active'; endif; ?>
+
+								<?php $bullets .=  '"></li>'; ?>
 
 							<?php $count++; endwhile;
 
