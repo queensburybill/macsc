@@ -57,7 +57,8 @@ add_action('init', 'macsc_theme_setup');
 // ====================================
 add_theme_support('post-thumbnails');
 
-add_theme_support('post-formats', array('image'));
+// This code is needed to add the 'image' format option to the dashboard:
+// add_theme_support('post-formats', array('image'));
 
 // ====================================
 //  SIDEBAR FUNCTION

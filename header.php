@@ -22,6 +22,8 @@
 
 		<div class="container-fluid container-fluid-macsc">
 
+<!-- 			Adding a bootstrap menu is covered in the 27th minute of 
+				the tutorial: https://www.youtube.com/watch?v=OSYbTkzuyDg&t=4218s -->
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
 					<div class="container">

@@ -1,9 +1,11 @@
 <?php get_header(); ?>
 
+	<!-- If you want to insert code from a separate file into this file, check out
+	this video at around min. 9 or 10: https://www.youtube.com/watch?v=e8nJMopiH2Q&t=3s -->
 	</div>
 	<div class="container-fluid container-fluid-macsc">
 	
-		<div class="row">
+		<div class="row mb-4">
 		
 			<!-- Bootstrap carousel -->
 			<div id="macscCarousel" class="carousel slide" data-ride="carousel">
@@ -21,16 +23,17 @@
 						$args = array(
 							'type' => 'post',
 							'posts_per_page' => -1,
+							'category_name' => 'slide'
 							// 'offset' => 1,   this exludes the first post
 
-							//Used to select only the image posts
-							'tax_query' => array(
-								array(
-									'taxonomy' => 'post_format',
-									'field' => 'slug',
-									'terms' => 'post-format-image',
-								)
-							)
+							//Used to select only posts with the 'image' post-format
+							// 'tax_query' => array(
+							// 	array(
+							// 		'taxonomy' => 'post_format',
+							// 		'field' => 'slug',
+							// 		'terms' => 'post-format-image',
+							// 	)
+							// )
 						);
 						$sliders = new WP_Query($args);
 
@@ -89,16 +92,10 @@
 
 		<div class="row">
 			
-			<div class="col-xs-12>
-				<?php
-				if ( have_posts() ):
-					while( have_posts() ): the_post(); ?>
+			<div class="col-xs-12">
 
-						<?php get_template_part('content', get_post_format()); ?>
+				<?php the_content(); ?>
 
-					<?php endwhile;
-				endif;
-				?>	
 			</div>
 
 		</div> <!-- close row -->

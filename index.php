@@ -1,21 +1,18 @@
 <?php get_header(); ?>
 
-<div class="row">
-	
-	<div class="col-xs-12 col-sm-8">
+	<!-- This is the default wordpress page (which is the posts page) -->
+	<?php
+	if ( have_posts() ):
+		while( have_posts() ): the_post(); ?>
 
-		<?php
-		if ( have_posts() ):
-			while( have_posts() ): the_post(); ?>
+<!-- 		This code inserts the code from content.php if the post format
+			is "standard" or otherwise inserts code from the appropriate file.
+			For example, if get_post_format() returns 'image', then Wordpress will
+			grab the code from the content-image.php file -->
+			<?php get_template_part('content', get_post_format()); ?>
 
-				<?php get_template_part('content', get_post_format()); ?>
-
-			<?php endwhile;
-		endif;
-		?>	
-	</div>
-
-</div> <!-- close row -->
-
+		<?php endwhile;
+	endif;
+	?>	
 	
 <?php get_footer(); ?>
