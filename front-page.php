@@ -13,6 +13,11 @@
 				<!-- Wrapper for the slides -->
 				<div class="carousel-inner">
 
+
+
+
+
+
 					<?php 
 
 						// WP_Query
@@ -20,23 +25,18 @@
 						// $sliders = new WP_Query('type=posts');
 
 						// Another format would be...
+// $args = array( 'post_type' => 'product', 'posts_per_page' => 10 );
+
 						$args = array(
 							'type' => 'post',
 							'posts_per_page' => -1,
-							'category_name' => 'slide'
+							'post_type' => 'slides'
+							// 'category_name' => 'slide'
 							// 'offset' => 1,   this exludes the first post
 
-							//Used to select only posts with the 'image' post-format
-							// 'tax_query' => array(
-							// 	array(
-							// 		'taxonomy' => 'post_format',
-							// 		'field' => 'slug',
-							// 		'terms' => 'post-format-image',
-							// 	)
-							// )
 						);
 						$sliders = new WP_Query($args);
-
+// 
 						if ( $sliders -> have_posts() ):
 
 							$count = 0;
@@ -44,13 +44,21 @@
 
 							while( $sliders -> have_posts() ): $sliders -> the_post(); ?>
 								
-								<div class="carousel-item <?php if($count == 0): echo 'active'; endif; ?>">
+								
+								<div class="item" style="background-image:url('<?php echo get_field( "image" ); ?>');">
+									<h2><?php echo get_field( "headline" ); ?></h2>
+									<h3><?php echo get_field( "subhead" ); ?></h3>
+
+								</div>
+
+
+								<!-- <div class="carousel-item <?php if($count == 0): echo 'active'; endif; ?>">
 									<?php the_post_thumbnail('full'); ?>
 									<div class="carousel-caption d-none d-md-block">
 										<?php the_title( sprintf('<h2 class="entry-title"><a href="%s">', esc_url( get_permalink() ) ),'</a></h2>' ); ?>
 										<p><?php the_content(); ?></p>
 									</div>
-								</div>
+								</div> -->
 
 								<?php $bullets .= '<li data-target="#macscCarousel" data-slide-to="'.$count.'" class="'; ?>
 

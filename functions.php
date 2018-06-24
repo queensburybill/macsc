@@ -83,4 +83,44 @@ add_theme_support('post-thumbnails');
 
 // add_action('widgets_init','macsc_widget_setup')
 
-// ?>
+
+
+
+
+function custom_post_types() {
+	register_post_type( 'slides', array(
+		'labels'             => array(
+			'name'               => _x( 'Slides', 'slides', 'your-plugin-textdomain' ),
+			'singular_name'      => _x( 'Slide', 'slide', 'your-plugin-textdomain' ),
+			'name_admin_bar'     => _x( 'Slide', 'add new on admin bar', 'your-plugin-textdomain' ),
+			'add_new'            => _x( 'Add New', 'Slide', 'your-plugin-textdomain' ),
+			'add_new_item'       => __( 'Add New Slide', 'your-plugin-textdomain' ),
+			'new_item'           => __( 'New Slide', 'your-plugin-textdomain' ),
+			'edit_item'          => __( 'Edit Slide', 'your-plugin-textdomain' ),
+			'view_item'          => __( 'View Slide', 'your-plugin-textdomain' ),
+			'all_items'          => __( 'All Slides', 'your-plugin-textdomain' ),
+			'search_items'       => __( 'Search Slides', 'your-plugin-textdomain' ),
+			'parent_item_colon'  => __( 'Parent Slides:', 'your-plugin-textdomain' ),
+			'not_found'          => __( 'No slides found.', 'your-plugin-textdomain' ),
+			'not_found_in_trash' => __( 'No slides found in Trash.', 'your-plugin-textdomain' )
+		),
+        'description'        => __( 'Description.', 'your-plugin-textdomain' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'menu_icon'          => 'dashicons-exerpt-view',
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'slides' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title' )
+	) );
+}
+add_action( 'init', 'custom_post_types' );
+
+
+
+?>
