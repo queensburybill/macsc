@@ -20,6 +20,7 @@ require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 // ====================================
 function macsc_styles_enqueue() {
 	wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '4.1.1', 'all');
+	wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.0.13/css/all.css' );
 	wp_enqueue_style('style', get_template_directory_uri() . '/style.css', array(), '1.0.0', 'all');
 }
 
@@ -36,6 +37,7 @@ function macsc_scripts_enqueue() {
 }
 
 add_action('wp_enqueue_scripts', 'macsc_scripts_enqueue');
+
 
 // ====================================
 //  ACTIVATE MENUS
@@ -64,21 +66,21 @@ add_theme_support('post-thumbnails');
 //  SIDEBAR FUNCTION
 // ====================================
 
-function macsc_widget_setup() {
+// function macsc_widget_setup() {
 
-	register_sidebar(array(
-		'name'          => 'Sidebar',
-		'id'            => 'sidebar-1',
-		'class'         => 'custom',
-		'description'   => 'Standard Sidebar',
-		'before_widget' => '<li id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</li>',
-		'before_title'  => '<h2 class="widgettitle">',
-		'after_title'   => '</h2>'
-	));
+// 	register_sidebar(array(
+// 		'name'          => 'Sidebar',
+// 		'id'            => 'sidebar-1',
+// 		'class'         => 'custom',
+// 		'description'   => 'Standard Sidebar',
+// 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
+// 		'after_widget'  => '</li>',
+// 		'before_title'  => '<h2 class="widgettitle">',
+// 		'after_title'   => '</h2>'
+// 	));
 
-}
+// }
 
-add_action('widgets_init','macsc_widget_setup')
+// add_action('widgets_init','macsc_widget_setup')
 
-?>
+// ?>
