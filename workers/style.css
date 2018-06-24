@@ -1,6 +1,8 @@
 /*  GLOBALS */
 /* ------------------------------------------- */
 /* ------------------------------------------- */
+@charset "UTF-8";
+
 html,body {margin: 0;}
 
 * {
@@ -8,6 +10,8 @@ html,body {margin: 0;}
     font-family: Arial, sans-serif;
     /* border: 1px #000 solid; */
 }
+
+*{box-sizing:border-box;}
 
 .container {
     float: left;
@@ -193,7 +197,109 @@ header{
     border-radius: 5px;
 }
 
+/********************************************************************** */
+/********OWL CAROUSEL - IMAGE SLIDER STYLES******************************** */
+/********************************************************************** */
+#carousel{
+  float:left;
+  display:block;
+  width:100%;
+  position:relative;
+}
 
+.slider-wrapper{
+  display:block;
+  margin: 0 auto;
+  width:100%;
+  max-width: 1600px; /*image width*/
+  /* max-width:800px; */
+}
+
+.cap-container{
+  position: relative;
+}
+
+.slider-holder{
+  float: left;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.item{
+  float:left;
+  display:block;
+  width:100%;
+  height:400px;  /*height of images to be same */
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.cap-text-container{
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  background-color: #fff;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.cap-text{
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 5%; /*caption position*/
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h2.cap-title{
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  width: 100%;
+}
+
+p.cap-desc{
+  color: #fff;
+  text-align: center;
+  font-size:20px;
+  font-weight: bold;
+  width: 100%;
+  padding: 0px 10px;
+}
+
+
+/************************************************************************/
+/*FOR OWL CAROUSEL MEDIA QUERIES for SLIDER  */
+/************************************************************************/
+@media screen and (max-width: 991px){
+  .item{
+      height: 350px;
+    }
+
+}@media screen and (max-width: 768px){
+  .item{
+      height: 300px;
+  }
+
+}@media screen and (max-width: 600px){
+  .item{
+    height: 250px;
+  }
+
+}@media screen and (max-width: 481px){
+  .item{
+    height: 200px;
+  }
+    .cap-text{
+      display: none;
+    }
+}
 
 /* EVENTS */
 /* ------------------------------------------- */
