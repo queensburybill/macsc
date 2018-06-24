@@ -2,6 +2,8 @@
 
 	<!-- This is the default wordpress page (which is the posts page) -->
 	<?php
+
+	// <!-- This is the post loop -->
 	if ( have_posts() ):
 		while( have_posts() ): the_post(); ?>
 
