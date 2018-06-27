@@ -262,6 +262,7 @@ h2.cap-title{
   font-size: 48px;
   font-weight: bold;
   width: 100%;
+  text-shadow: 2px 2px #424146;
 }
 
 p.cap-desc{
@@ -271,6 +272,7 @@ p.cap-desc{
   font-weight: bold;
   width: 100%;
   padding: 0px 10px;
+  text-shadow: 2px 2px #424146;
 }
 
 
