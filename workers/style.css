@@ -381,9 +381,6 @@ img.footlogo {
     margin-right: auto;
     width: 100px;
     height: 100px;
-
-
-
 }
 
 .hours {
@@ -394,8 +391,8 @@ img.footlogo {
     text-align: right;
     font-size:11px;
     color:#4e0089;
-
 }
+
 span.hoo{
   color: #f4640d;
   font-weight: bold;
@@ -404,4 +401,9 @@ span.hoo{
 
 .hours span{
     font-weight: bold;
+}
+
+span.explore-text {
+  color: #f4640d;
+  font-weight: bold;
 }
