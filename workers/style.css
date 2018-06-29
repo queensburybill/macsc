@@ -31,66 +31,60 @@ html,body {margin: 0;}
 header{
   display: block;
   float: left;
-  position: relative;
+  /* position: relative; */
   width: 100%;
+  background-color:#cecdc8;
 }
 
-.logo {
-    float: left;
-    width: 25%;
-    padding: 0;
-    margin: 0;
+.header-logo{
+  display: block;
+  float: left;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  position: relative;
 }
 
-.logo img {
-    max-width: 100%;
-    height: auto;
+.company-header{
+    padding-top: 35px;
 }
 
-.company{
-    display: block;
-    float: left;
-    width: 50%;
-    margin: 0;
+.company-name{
     text-align: center;
-    /* border: 1px black solid; */
 }
 
-.righter {
-    float: right;
+.header-right{
     display: block;
-    width: 25%;
-    /* margin: 0; */
-    /* padding: 0; */
-    font-size: 12px;
-    background: #fff;
-    text-decoration: none;
-    /* border: 1px black solid; */
-}
-
-.links {
     float: right;
-    display: block;
-    /* margin: 0; */
-    /* padding: 0; */
-    list-style: none;
-    text-decoration: none;
+    padding-top: 5px;
 }
 
-.links a{
-    text-align: right;
+.header-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-list li{
+    margin: 8px;
+    padding: 3px 3px;
+    text-align: center;
+    border-radius: 1px;
+    background-color: #fff;
+    border: 2px solid #fff;
     color: #000;
+    font-size: 15px;
 }
 
-.links a:hover{
-    /* color: #000; */
-    /* text-decoration: none; */
+.header-list a{
+  color: #000;
 }
 
 #glyph {
-    font-size: 20px;
     float: right;
     display: block;
+    font-size: 30px;
+    color:#3B5998;   /*FB color*/
+    padding-bottom: 5px;
 }
 
 
@@ -277,24 +271,62 @@ p.cap-desc{
 
 
 /************************************************************************/
-/*FOR OWL CAROUSEL MEDIA QUERIES for SLIDER  */
+/*FOR HEADERL MEDIA QUERIES  */
+/************************************************************************/
+/******AND**********************************************************/
+/************************************************************************/
+/*FOR OWL CAROUSEL MEDIA QUERIES for SLIDER   */
 /************************************************************************/
 @media screen and (max-width: 991px){
+  /*HEADER */
+  .company-name {
+      font-size: 30px;
+  }
+
+  /*OWL */
   .item{
       height: 350px;
     }
 
 }@media screen and (max-width: 768px){
+  /*HEADER  */
+  .company-name {
+      font-size: 25px;
+  }
+  .header-right{
+    display: none;
+  }
+
+  /*OWL */
   .item{
       height: 300px;
   }
 
 }@media screen and (max-width: 600px){
+  /*HEADER */
+  .header-logo{
+    width:100%;
+    text-align: center;
+  }
+  .company-header{
+    padding-top: 0;
+  }
+  .company-name {
+      font-size: 20px;
+  }
+
+  /*QWL  */
   .item{
     height: 250px;
   }
 
 }@media screen and (max-width: 481px){
+  /*HEADER  */
+  .company-name {
+      font-size: 20px;
+  }
+
+  /*OWL  */
   .item{
     height: 200px;
   }
