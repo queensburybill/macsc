@@ -278,6 +278,47 @@ hr {
 }*/
 
 
+/* BODY STYLES */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+.who-we-are h1,
+.who-we-are h2,
+.who-we-are h3,
+.who-we-are h4,
+.who-we-are h5,
+.who-we-are h6 {
+    color: #e35e01;
+}
+
+.what-we-do h1,
+.what-we-do h2,
+.what-we-do h3,
+.what-we-do h4,
+.what-we-do h5,
+.what-we-do h6 {
+    color: #feac00;
+}
+
+.get-help h1,
+.get-help h2,
+.get-help h3,
+.get-help h4,
+.get-help h5,
+.get-help h6 {
+    color: #8FBB26;
+}
+
+.get-involved h1,
+.get-involved h2,
+.get-involved h3,
+.get-involved h4,
+.get-involved h5,
+.get-involved h6 {
+    color: #ff9000;
+}
+
+
 /* BOOTSTRAP CAROUSEL */
 /* ------------------------------------------- */
 /* ------------------------------------------- */

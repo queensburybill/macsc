@@ -12,7 +12,7 @@ get_header(); ?>
 
 			<div class="row">
 					
-				<div class="col-xs-12 what-we-do">
+				<div class="col-xs-12 what-we-do int-content">
 
 					<?php the_content(); ?>
 

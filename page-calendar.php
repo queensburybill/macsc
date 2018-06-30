@@ -12,7 +12,7 @@ get_header(); ?>
 
 			<div class="row">
 					
-				<div class="col-xs-12 calendar">
+				<div class="col-xs-12 calendar int-content">
 
 					<?php the_content(); ?>
 
