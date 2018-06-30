@@ -18,10 +18,18 @@ require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 // ====================================
 //  INCLUDE STYLES
 // ====================================
+
+// To see how to set up the enqueue functions see this tutorial:
+// https: www.youtube.com/watch?v=NF6r3Ejpris&t=240s
 function macsc_styles_enqueue() {
 	wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '4.1.1', 'all');
 	wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.0.13/css/all.css' );
 	wp_enqueue_style('style', get_template_directory_uri() . '/style.css', array(), '1.0.0', 'all');
+	wp_enqueue_style('who-we-are', get_template_directory_uri() . '/css/who-we-are.css', array(), '1.0.0', 'all');
+	wp_enqueue_style('what-we-do', get_template_directory_uri() . '/css/what-we-do.css', array(), '1.0.0', 'all');
+	wp_enqueue_style('get-help', get_template_directory_uri() . '/css/get-help.css', array(), '1.0.0', 'all');
+	wp_enqueue_style('get-involved', get_template_directory_uri() . '/css/get-involved.css', array(), '1.0.0', 'all');
+	wp_enqueue_style('calendar', get_template_directory_uri() . '/css/calendar.css', array(), '1.0.0', 'all');
 }
 
 add_action('wp_enqueue_scripts', 'macsc_styles_enqueue');
@@ -84,8 +92,9 @@ add_theme_support('post-thumbnails');
 // add_action('widgets_init','macsc_widget_setup')
 
 
-
-
+// ====================================
+//  CUSTOM POST-TYPES
+// ====================================
 
 function custom_post_types() {
 	register_post_type( 'slides', array(

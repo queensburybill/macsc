@@ -13,11 +13,6 @@
 				<!-- Wrapper for the slides -->
 				<div class="carousel-inner">
 
-
-
-
-
-
 					<?php 
 
 						// WP_Query

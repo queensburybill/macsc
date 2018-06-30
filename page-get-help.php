@@ -1,6 +1,6 @@
 <?php 
 
-// Template Name: Page Who We Are
+// Template Name: Page Get Help
 
 get_header(); ?>
 
@@ -12,7 +12,7 @@ get_header(); ?>
 
 			<div class="row">
 					
-				<div class="col-xs-12 who-we-are">
+				<div class="col-xs-12 get-help">
 
 					<?php the_content(); ?>
 

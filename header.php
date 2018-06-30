@@ -8,18 +8,9 @@
 	</head>
 
 
-	<!-- Use this code if you want to differentiate styles between the front page and the rest of your pages. See Tutorial part 5 @ 14:00. https://www.youtube.com/watch?v=pJ4NTBdvyj4&t=321s  -->
-	<?php
+	<!-- IF you want to differentiate styles in the body on different pages, see Tutorial part 4 @ 14:00 to create custom body classes. https://www.youtube.com/watch?v=pJ4NTBdvyj4&t=321s  -->
 
-		if( is_front_page() ):
-			$macsc_classes = array( 'macsc-class', 'my-class' );
-		else:
-			$macsc_classes = array( 'no-macsc-class' );
-		endif;
-
-	?>
-
-	<body <?php body_class( $macsc_classes ); ?>>
+	<body>
 
 <!-- ===========================================
                         HEADER
