@@ -278,6 +278,86 @@ hr {
 }*/
 
 
+
+/********************************************************************** */
+/********OWL CAROUSEL - IMAGE SLIDER STYLES******************************** */
+/********************************************************************** */
+#carousel{
+  float:left;
+  display:block;
+  width:100%;
+  position:relative;
+}
+
+.slider-wrapper{
+  display:block;
+  margin: 0 auto;
+  width:100%;
+  max-width: 1600px; /*image width*/
+  /* max-width:800px; */
+}
+
+.cap-container{
+  position: relative;
+}
+
+.slider-holder{
+  float: left;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.item{
+  float:left;
+  display:block;
+  width:100%;
+  height:400px;  /*height of images to be same */
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+.cap-text-container{
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  background-color: #fff;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.cap-text{
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 5%; /*caption position*/
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h2.cap-title{
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  width: 100%;
+  text-shadow: 2px 2px #424146;
+}
+
+p.cap-desc{
+  color: #fff;
+  text-align: center;
+  font-size:20px;
+  font-weight: bold;
+  width: 100%;
+  padding: 0px 10px;
+  text-shadow: 2px 2px #424146;
+}
+
+
 /* BODY STYLES */
 /* ------------------------------------------- */
 /* ------------------------------------------- */
@@ -323,7 +403,7 @@ hr {
 /* ------------------------------------------- */
 /* ------------------------------------------- */
 
-.carousel-indicators li {
+/*.carousel-indicators li {
   width: 8px;
   height: 8px;
   border-radius: 100%;
@@ -363,7 +443,7 @@ hr {
 	.carousel-inner {
 		height: 220px;
 	}
-}*/
+}*/*/
 
 
 /* EVENTS */
@@ -455,4 +535,70 @@ footer{
 
 .hours span{
     font-weight: bold;
+}
+
+
+/************************************************************************/
+/*FOR HEADERL MEDIA QUERIES  */
+/************************************************************************/
+/******AND**********************************************************/
+/************************************************************************/
+/*FOR OWL CAROUSEL MEDIA QUERIES for SLIDER   */
+/************************************************************************/
+@media screen and (max-width: 991px){
+  /*HEADER */
+  .company-name {
+      font-size: 30px;
+  }
+
+  /*OWL */
+  .item{
+      height: 350px;
+    }
+
+}@media screen and (max-width: 768px){
+  /*HEADER  */
+  .company-name {
+      font-size: 25px;
+  }
+  .header-right{
+    display: none;
+  }
+
+  /*OWL */
+  .item{
+      height: 300px;
+  }
+
+}@media screen and (max-width: 600px){
+  /*HEADER */
+  .header-logo{
+    width:100%;
+    text-align: center;
+  }
+  .company-header{
+    padding-top: 0;
+  }
+  .company-name {
+      font-size: 20px;
+  }
+
+  /*QWL  */
+  .item{
+    height: 250px;
+  }
+
+}@media screen and (max-width: 481px){
+  /*HEADER  */
+  .company-name {
+      font-size: 20px;
+  }
+
+  /*OWL  */
+  .item{
+    height: 200px;
+  }
+    .cap-text{
+      display: none;
+    }
 }
