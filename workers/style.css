@@ -1,23 +1,54 @@
-/*  GLOBALS */
+/*
+	Theme Name: macsc-theme
+	Theme URI: localhost:8888/macsc
+	Author: Albany Can Code
+	Author URI: https://albanycancode.org/
+	Version: 0.1 alpha
+	Tags: bright, responsive, image-carousel, sidebar, two-columns
+	Description: Mechanicville Area Community Services Center Website
+*/
+
+
+
+/* ===========================================
+    OLD BOOTSTRAP OVERRIDES
+   ==========================================*/
+
+.container-footer {
+	background-color: #eee;
+	padding: 20px 0;
+}
+
+.container-fluid-macsc {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+
+/*  GLOBALS
 /* ------------------------------------------- */
 /* ------------------------------------------- */
-@charset "UTF-8";
 
 html,body {margin: 0;}
 
 * {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
     /* border: 1px #000 solid; */
 }
 
-*{box-sizing:border-box;}
-
-.container {
-    float: left;
-    position: relative;
-    /* width: 100%; */
+hr {
+	color: #a08d7c;
 }
+
+/*.wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 100%*/
+  /* max-width: 600px; */
+  /* min-height: 100%; */
+/*}*/
 
 .clearfix {
   clear:both;
@@ -28,63 +59,76 @@ html,body {margin: 0;}
 /* ------------------------------------------- */
 /* ------------------------------------------- */
 
-header{
-  display: block;
-  float: left;
-  /* position: relative; */
-  width: 100%;
-  background-color:#cecdc8;
+/*.header {
+	padding: 0 -15px;
+}*/
+
+/*.rowfix {
+	margin-left: 0;
+	margin-right: 0;
+}*/
+
+.logo {
+	display: block;
+    max-width: 100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 1px black solid; */
 }
 
-.header-logo{
-  display: block;
-  float: left;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  position: relative;
+.logo img {
+	display: block;
+	margin: 20px auto 10px;
+    max-width: 120px;
+    height: auto;
 }
 
-.company-header{
-    padding-top: 35px;
-}
-
-.company-name{
-    text-align: center;
-}
-
-.header-right{
+.company{
+    color: #a08d7c;
     display: block;
-    float: right;
-    padding-top: 5px;
+    margin: 15px auto 5px;
+    /*border: 1px solid black;*/
 }
 
-.header-list{
-    list-style-type: none;
+.company h6 {
+	text-align: center;
+}
+
+.righter {
+    float: right;
+    display: block;
+    width: 25%;
+    padding: 0;
+    font-size: 12px;
+    background: #fff;
+    text-decoration: none;
+    border: 1px black solid;
+}
+
+.righter a:hover{
+    color: #a08d7c;
+    text-decoration: none;
+}
+
+.links {
+    float: right;
+    display: block;
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
-.header-list li{
-    margin: 8px;
-    padding: 3px 3px;
-    text-align: center;
-    border-radius: 1px;
-    background-color: #fff;
-    border: 2px solid #fff;
-    color: #000;
-    font-size: 15px;
-}
-
-.header-list a{
-  color: #000;
+.links a{
+	color: #a08d7c;
+    text-align: right;
 }
 
 #glyph {
+    font-size: 20px;
     float: right;
     display: block;
-    font-size: 30px;
-    color:#3B5998;   /*FB color*/
-    padding-bottom: 5px;
 }
 
 
@@ -92,22 +136,20 @@ header{
 /* ------------------------------------------- */
 /* ------------------------------------------- */
 
-.navwrap {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    /* width: 10%; */
+/*.container li {
+    margin: 0 20px 0 0;
 }
 
-.navbar-collapse.dropdown {
-    position: absolute;
+.container li:last-child {
+    margin: 0;
+}*/
+
+.nav-center {
+	text-align: center;
 }
 
 .navbar-collapse.collapse.show li{
-    /* position: absolute; */
-    /* margin-bottom: 5px; */
-    padding-left: 5px;
-    min-width: 130px;
+    margin-bottom: 5px;
 }
 
 .navbar-toggler-icon {
@@ -115,234 +157,223 @@ header{
     color: #2632A1;
 }
 
-.nav-item {
-    position: relative;
-    min-width: 130px;
-    border-radius: 3px;
-    margin: 0 5px 0 0;
-    padding: 0;
-}
-
-.nav-item li:last-child {
-    margin: 0;
-}
-
-.nav-item a{
-    color: #000;
-}
-
-.nav-item a:hover{
-    color: #fff;
-}
-
-/* .nav-item.dropdown.show {
-    min-width: 100%;
-} */
-
-
-
-#nav1 {
+.nav1 {
     background: #e35e01;
+    margin: 0 20px 0 0;
 }
-
-#nav1 a:hover {
+.nav1 a {
+	color: #fff;
+}
+.nav1 a:hover {
     background: #c75403;
     color: #fff;
-    border-radius: 5px;
+}
+.nav1 ul {
+    background: #e35e01;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+}
+.nav1 li {
+	margin: 0;
+}
+.nav1 a:after {
+	display: none;
 }
 
-#nav2 {
+.nav2 {
+	color: #fff;
     background: #feac00;
+    margin: 0 20px 0 0;
 }
-
-#nav2 a:hover {
+.nav2 a {
+	color: #fff;
+}
+.nav2 a:hover {
     background: #e79a00;
     color: #fff;
-    border-radius: 5px;
+}
+.nav2 ul {
+    background: #feac00;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+}
+.nav2 li {
+	margin: 0;
+}
+.nav2 a:after {
+	display: none;
 }
 
-#nav3 {
+.nav3 {
+	color: #fff;
     background: #8FBB26;
+    margin: 0 20px 0 0;
 }
-
-#nav3 a:hover {
+.nav3 a {
+	color: #fff;
+}
+.nav3 a:hover {
     background: #6f9811;
     color: #fff;
-    border-radius: 5px;
+}
+.nav3 ul {
+    background: #8FBB26;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+}
+.nav3 li {
+	margin: 0;
+}
+.nav3 a:after {
+	display: none;
 }
 
-#nav4 {
+.nav4 {
+	color: #fff;
     background: #ff9000;
+    margin: 0 20px 0 0;
 }
-
-#nav4 a:hover {
+.nav4 a {
+	color: #fff;
+}
+.nav4 a:hover {
     background: #e48102;
     color: #fff;
-    border-radius: 5px;
+}
+.nav4 ul {
+    background: #ff9000;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+}
+.nav4 li {
+	margin: 0;
+}
+.nav4 a:after {
+	display: none;
 }
 
-#nav5 {
+.nav5 {
+	color: #fff;
     background: #434DAB;
+    margin: 0 20px 0 0;
 }
+.nav5 a {
+	color: #fff;
+}
+/*#nav5 {
+    background: #434DAB;
+}*/
 
-#nav5 a:hover {
+.nav5 a:hover {
     background: #2632A1;
     color: #fff;
-    border-radius: 5px;
+}
+/*#nav5 a:hover {
+    background: #2632A1;
+    color: #fff;
+}*/
+
+
+/* BODY STYLES */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+.who-we-are h1,
+.who-we-are h2,
+.who-we-are h3,
+.who-we-are h4,
+.who-we-are h5,
+.who-we-are h6 {
+    color: #e35e01;
 }
 
-/********************************************************************** */
-/********OWL CAROUSEL - IMAGE SLIDER STYLES******************************** */
-/********************************************************************** */
-#carousel{
-  float:left;
-  display:block;
-  width:100%;
-  position:relative;
+.what-we-do h1,
+.what-we-do h2,
+.what-we-do h3,
+.what-we-do h4,
+.what-we-do h5,
+.what-we-do h6 {
+    color: #feac00;
 }
 
-.slider-wrapper{
-  display:block;
-  margin: 0 auto;
-  width:100%;
-  max-width: 1600px; /*image width*/
-  /* max-width:800px; */
+.get-help h1,
+.get-help h2,
+.get-help h3,
+.get-help h4,
+.get-help h5,
+.get-help h6 {
+    color: #8FBB26;
 }
 
-.cap-container{
-  position: relative;
-}
-
-.slider-holder{
-  float: left;
-  width: 100%;
-  display: block;
-  position: relative;
-}
-
-.item{
-  float:left;
-  display:block;
-  width:100%;
-  height:400px;  /*height of images to be same */
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-}
-
-.cap-text-container{
-  position: absolute;
-  bottom: 20px;
-  text-align: center;
-  background-color: #fff;
-  color: #fff;
-  opacity: 0.7;
-}
-
-.cap-text{
-  display: block;
-  width: 100%;
-  position: absolute;
-  bottom: 5%; /*caption position*/
-  color: #fff;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-h2.cap-title{
-  color: #fff;
-  text-align: center;
-  font-size: 48px;
-  font-weight: bold;
-  width: 100%;
-  text-shadow: 2px 2px #424146;
-}
-
-p.cap-desc{
-  color: #fff;
-  text-align: center;
-  font-size:20px;
-  font-weight: bold;
-  width: 100%;
-  padding: 0px 10px;
-  text-shadow: 2px 2px #424146;
+.get-involved h1,
+.get-involved h2,
+.get-involved h3,
+.get-involved h4,
+.get-involved h5,
+.get-involved h6 {
+    color: #ff9000;
 }
 
 
-/************************************************************************/
-/*FOR HEADERL MEDIA QUERIES  */
-/************************************************************************/
-/******AND**********************************************************/
-/************************************************************************/
-/*FOR OWL CAROUSEL MEDIA QUERIES for SLIDER   */
-/************************************************************************/
-@media screen and (max-width: 991px){
-  /*HEADER */
-  .company-name {
-      font-size: 30px;
-  }
+/* BOOTSTRAP CAROUSEL */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
 
-  /*OWL */
-  .item{
-      height: 350px;
-    }
-
-}@media screen and (max-width: 768px){
-  /*HEADER  */
-  .company-name {
-      font-size: 25px;
-  }
-  .header-right{
-    display: none;
-  }
-
-  /*OWL */
-  .item{
-      height: 300px;
-  }
-
-}@media screen and (max-width: 600px){
-  /*HEADER */
-  .header-logo{
-    width:100%;
-    text-align: center;
-  }
-  .company-header{
-    padding-top: 0;
-  }
-  .company-name {
-      font-size: 20px;
-  }
-
-  /*QWL  */
-  .item{
-    height: 250px;
-  }
-
-}@media screen and (max-width: 481px){
-  /*HEADER  */
-  .company-name {
-      font-size: 20px;
-  }
-
-  /*OWL  */
-  .item{
-    height: 200px;
-  }
-    .cap-text{
-      display: none;
-    }
+.carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
 }
+
+.carousel {
+	overflow: hidden;
+	width: 100%;
+}
+
+.carousel-inner {
+	min-width: 600px;
+	height: 480px;
+}
+
+.carousel-inner.carousel-item img {
+	overflow: hidden;
+	width: 100%;
+}
+
+.carousel-caption a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.carousel-caption a:hover {
+	color: #89b2df;
+}
+
+@media screen and (max-width: 767px) {
+	.carousel-inner {
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 401px) {
+	.carousel-inner {
+		height: 220px;
+	}
+}*/
+
 
 /* EVENTS */
 /* ------------------------------------------- */
 /* ------------------------------------------- */
 
 .events {
-    position: relative;
-    display: block;
+    display: inline-block;
     float: left;
+    margin: 10px 0 0 0;
     padding-top: 90px;
     width: 100%;
     height: 200px;
@@ -351,27 +382,25 @@ p.cap-desc{
 }
 
 .calendar {
-    position: relative;
     display: block;
     float: left;
     margin: 10px 0;
     padding-top: 120px;
     width: 50%;
-    height: 500px;
+    height: 250px;
     text-align: center;
-    border: 3px black solid;
+    border: 1px black solid;
 }
 
 .facebook{
-    position: relative;
     display: block;
     float: right;
     margin: 10px 0;
     padding-top: 120px;
     width: 50%;
-    height: 500px;
+    height: 250px;
     text-align: center;
-    border: 3px blue solid;
+    border: 1px black solid;
 }
 
 
@@ -381,59 +410,47 @@ p.cap-desc{
 /* ------------------------------------------- */
 
 footer{
-    /* position: relative; */
-    /* display: block; */
-    /* float: left; */
-    /* width: 100%; */
-    font-size: 10px;
-    border-style:solid;
-    border-width:3px;
-    border-top-style: none;
-    border-right-style: none;
-    border-left-style: none;
-    border-color: #4e0089;
-    padding: 8px 2px 8px 2px;
-    background-color: #f5f5f5;
+  display:block;
+  float: left;
+  width: 100%;
+  margin: 50px 0 0 0;
+  font-size: 10px;
+}
 
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
+#footerwrap {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
 }
 
 .sitemap {
-    position: relative;
     float: left;
     display: block;
     margin: 0;
-    /* padding: 15px 0 15px 0; */
+    padding: 15px 0 15px 0;
     width: 45%;
-
+    border: 1px #000 solid;
     text-align: center;
-    font-size:11px;
 }
 
-img.footlogo {
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    height: 100px;
-
-
-
+.footerlogo {
+    float: left;
+    display: block;
 }
 
 .hours {
-    position: relative;
     float: right;
     display: block;
     width: 20%;
     text-align: right;
-    font-size:11px;
-    color:#4e0089;
-
-}
-span.hoo{
-  color: #f4640d;
-  font-weight: bold;
-  font-size: 12px;
+    border: 1px #000 solid;
 }
 
 .hours span{
