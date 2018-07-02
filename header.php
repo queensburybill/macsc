@@ -80,27 +80,26 @@
 		the tutorial: https://www.youtube.com/watch?v=OSYbTkzuyDg&t=4218s -->
 		<div class="container">
 				<div class="row">
-					<div class="col-xs-12" style="width: 100%;">
+					<div class="col-xs-12 nav-container">
 
 						<nav class="navbar navbar-expand-md">
 
-							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primary-nav">
 								<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
 							</button>
 				
-							<div id="navbarSupportedContent" class="nav-center mx-auto">
+							<!-- See the Walker Class tutorial here: https://www.youtube.com/watch?v=ArEmwJV6M7s -->
 								<?php wp_nav_menu( array( 
 									'theme_location'	=> 'primary',
 									'menu' 				=> 'Primary Header Navigation',
 						            'depth'             => 2,
 						            'container'         => 'div',
 						            'container_class'   => 'collapse navbar-collapse',
-						            'container_id'      => 'navbarSupportedContent',
+						            'container_id'      => 'primary-nav',
 						            'menu_class'        => 'navbar-nav mx-auto',
 						            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
 						            'walker'            => new wp_bootstrap_navwalker()
 								)); ?>
-							</div>
 
 						</nav> <!-- end nav -->
 

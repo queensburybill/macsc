@@ -5,6 +5,7 @@
 // ====================================
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
+
 // ====================================
 //  REGISTER STYLES (NOT NECESSARY YET)
 // ====================================
@@ -14,6 +15,7 @@ require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 // 	wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '4.1.1', 'all');
 // 	wp_register_style('style', get_template_directory_uri() . '/style.css', array(), '1.0.0', 'all');
 // }
+
 
 // ====================================
 //  INCLUDE STYLES
@@ -63,34 +65,11 @@ function macsc_theme_setup() {
 
 add_action('init', 'macsc_theme_setup');
 
+
 // ====================================
 //  THEME SUPPORT
 // ====================================
 add_theme_support('post-thumbnails');
-
-// This code is needed to add the 'image' format option to the dashboard:
-// add_theme_support('post-formats', array('image'));
-
-// ====================================
-//  SIDEBAR FUNCTION
-// ====================================
-
-// function macsc_widget_setup() {
-
-// 	register_sidebar(array(
-// 		'name'          => 'Sidebar',
-// 		'id'            => 'sidebar-1',
-// 		'class'         => 'custom',
-// 		'description'   => 'Standard Sidebar',
-// 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
-// 		'after_widget'  => '</li>',
-// 		'before_title'  => '<h2 class="widgettitle">',
-// 		'after_title'   => '</h2>'
-// 	));
-
-// }
-
-// add_action('widgets_init','macsc_widget_setup')
 
 
 // ====================================

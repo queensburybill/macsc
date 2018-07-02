@@ -27,12 +27,13 @@
 
 						while( $sliders -> have_posts() ): $sliders -> the_post(); ?>
 							
-							<div class="item" style="background-image:url('<?php echo get_field( "image" ); ?>');">
+							<div class="item" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%), url('<?php echo get_field( "image" ); ?>');">
 								<div class="cap-text">									
 									<h2 class="cap-title"><?php echo get_field( "headline" ); ?></h2>
 									<p class="cap-desc"><?php echo get_field( "subhead" ); ?></p>
 								</div>
 							</div>
+
 							<!-- Indicators -->
 							<!-- If you need to troubleshoot the indicators, the Italian guy does his tutorial at around 25:00 at this YouTube URL: https://www.youtube.com/watch?v=0UzwBRLfsbM -->
 
@@ -43,12 +44,13 @@
 					wp_reset_postdata();
 
 					?>
-
+		
 				</div>
 			</div>
 		</div>
 
 	  <div class="clearfix"></div>
+
 	
 	<div class="container">	
 
