@@ -15,18 +15,18 @@
 <!-- ===========================================
                         HEADER
      =========================================== -->
-	     <div class="container-fluid">
+	     <div class="header">
 	     	<div class="logo">
-	     			<a href="http://localhost:8888/wp-macsc/">
-	     				<img src="http://localhost:8888/macsc/wp-content/uploads/2018/06/macsc-logo-2018-clr.png">
-	     			</a>
-	     		</div>
+     			<a href="http://localhost:8888/wp-macsc/">
+     				<img src="http://localhost:8888/wp-macsc/wp-content/themes/macsc-theme/img/macsc-logo-2018-clr-whitebg.png">
+     			</a>
+     		</div>
 
-	     		<div class="company">
+<!-- 	     		<div class="company">
 	     			<h6>Mechanicville Area Community Services Center, Inc.</h6>
 	     		</div>
 
-	     		<hr>
+	     		<hr> -->
 					
 <!-- 	     		<div class="righter ml-auto my-3">
 	     			<ul class="links">
@@ -36,8 +36,7 @@
 	     			</ul>
 	     		</div> -->
 
-	     	</div>
-	     </div>
+     	</div>
 <!-- END: header -->
 
 <!-- ===========================================
@@ -78,9 +77,10 @@
 
 <!-- 	Adding a bootstrap menu is covered in the 27th minute of 
 		the tutorial: https://www.youtube.com/watch?v=OSYbTkzuyDg&t=4218s -->
-		<div class="container">
+
+		<div class="container-fluid-macsc">
 				<div class="row">
-					<div class="col-xs-12 nav-container">
+					<div class="col-xs-12 container nav-container">
 
 						<nav class="navbar navbar-expand-md">
 
@@ -106,5 +106,7 @@
 					</div> <!-- end col -->
 				</div> <!-- end row -->
 		</div> <!-- end container -->
+
+		<div class="nav-rule"></div>
 
 		<div class="container">
