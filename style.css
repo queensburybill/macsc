@@ -254,7 +254,6 @@ li.nav1 {
 	top: 162px;
 	height: 18px;
 	width: 100%;
-	background: #8FBB26;
 	background: linear-gradient(to right, #e35e01, #e35e01 49%, #934fa2 51%, #934fa2);
 	z-index: -1;
 }
@@ -272,7 +271,7 @@ li.nav1 {
 .nav-all ul {
     border: none;
     border-radius: 0;
-    margin-top: 14px;
+    margin-top: 18px;
     border-top: 4px solid #fff;
 }
 

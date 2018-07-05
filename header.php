@@ -18,7 +18,7 @@
 	     <div class="header">
 	     	<div class="logo">
      			<a href="http://localhost:8888/wp-macsc/">
-     				<img src="http://localhost:8888/wp-macsc/wp-content/themes/macsc-theme/img/macsc-logo-2018-clr-whitebg.png">
+     				<img src="http://localhost:8888/macsc/wp-content/uploads/2018/07/macsc-logo-2018-clr-whitebg.png">
      			</a>
      		</div>
 
