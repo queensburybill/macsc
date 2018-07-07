@@ -40,38 +40,6 @@
 <!-- END: header -->
 
 <!-- ===========================================
-                 HEADER - logo on left
-     =========================================== -->
-<!-- 	     <div class="container">
-	     	<div class="row rowfix">
-
-	     		<div class="col-xs-12 col-lg-8">
-		     		<div class="logo my-3 mr-3">
-		     			<a href="http://localhost:8888/wp-macsc/">
-		     				<img src="wp-content/themes/macsc-theme/img/macsc-logo-2018-clr.png">
-		     			</a>
-		     		</div>
-
-		     		<div class="company my-auto">
-		     			<h6>Mechanicville Area Community Services Center, Inc.</h6>
-		     		</div>
-		     	</div>
-					
-				<div class="col-xs-12 col-lg-4">
-		     		<div class="righter ml-auto my-3">
-		     			<ul class="links">
-		     				<li><a href="#">Newsletter Sign-up</a></li>
-		     				<li><a href="#">Donate</a></li>
-		     				<li id="glyph"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-		     			</ul>
-		     		</div>
-	     		</div>
-
-	     	</div>
-	     </div> -->
-<!-- END: header -->
-
-<!-- ===========================================
                         NAVBAR
      =========================================== -->
 

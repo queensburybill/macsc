@@ -14,11 +14,6 @@
     OLD BOOTSTRAP OVERRIDES
    ==========================================*/
 
-.container-footer {
-	background-color: #eee;
-	padding: 20px 0;
-}
-
 .container-fluid-macsc {
 	width: 100%;
 	padding-left: 0;
@@ -37,12 +32,16 @@ html,body {margin: 0;}
     font-family: Montserrat, Arial, sans-serif;
 }
 
+body {
+  height: 100%;
+}
+
 hr {
 	color: #a08d7c;
 }
 
 .clearfix {
-  clear:both;
+  clear: both;
 }
 
 
@@ -55,6 +54,7 @@ hr {
 	height: 86px;
 	padding-top: 2px;
 	margin: 0 0 36px 0;
+  background: #f4aa00;
 	background: linear-gradient(to right, #e35e01, #f4aa00 40%, #f4aa00 60%, #8FBB26);
 }
 
@@ -254,6 +254,7 @@ li.nav1 {
 	top: 162px;
 	height: 18px;
 	width: 100%;
+  background: #fff;
 	background: linear-gradient(to right, #e35e01, #e35e01 49%, #934fa2 51%, #934fa2);
 	z-index: -1;
 }
@@ -402,9 +403,6 @@ p.cap-desc{
 .who-we-are h6 {
     color: #e35e01;
 }
-.wwa-nav-rule {
-    background: #e35e01;
-}
 
 .what-we-do h1,
 .what-we-do h2,
@@ -413,9 +411,6 @@ p.cap-desc{
 .what-we-do h5,
 .what-we-do h6 {
     color: #f4aa00;
-}
-.wwd-nav-rule {
-    background: #f4aa00;
 }
 
 .get-help h1,
@@ -426,9 +421,6 @@ p.cap-desc{
 .get-help h6 {
     color: #8FBB26;
 }
-.gh-nav-rule {
-    background: #8FBB26;
-}
 
 .get-involved h1,
 .get-involved h2,
@@ -438,13 +430,7 @@ p.cap-desc{
 .get-involved h6 {
     color: #ff9000;
 }
-.gi-nav-rule {
-    background: #ff9000;
-}
 
-.ca-nav-rule {
-    background: #934fa2;
-}
 
 /* EVENTS */
 /* ------------------------------------------- */
@@ -489,62 +475,83 @@ p.cap-desc{
 /* ------------------------------------------- */
 /* ------------------------------------------- */
 
-footer{
-  display:block;
-  float: left;
+footer {
+/*  position: absolute;
+  bottom: 0;*/
+  display: block;
   width: 100%;
+  height: auto;
+  padding: 20px 0;
   margin: 50px 0 0 0;
-  font-size: 10px;
+  box-shadow: 0 50vh 0 50vh #000;
+  background: #f4aa00;
+  background: linear-gradient(to right, #e35e01, #f4aa00 40%, #f4aa00 60%, #8FBB26);
 }
 
-#container {
-    min-height: 100%;
-    position: relative;
+footer p,
+footer a,
+footer a:hover {
+  color: #fff;
 }
 
-#footerwrap {
-    display: block;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    height: 50px;
+footer li {
+  list-style: none;
 }
 
-.sitemap {
-    float: left;
-    display: block;
-    margin: 0;
-    padding: 15px 0 15px 0;
-    width: 45%;
-    border: 1px #000 solid;
-    text-align: center;
+footer p {
+  font-size: 12px;
 }
 
-.footerlogo {
-    float: left;
-    display: block;
+footer a {
+  font-size: 12px;
+  text-decoration: none;
 }
 
-.hours {
-    float: right;
-    display: block;
-    width: 20%;
-    text-align: right;
-    border: 1px #000 solid;
+.footer-left li {
+  text-align: left;
 }
 
-.hours span{
-    font-weight: bold;
+.footer-left a {
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer-left span {
+  font-weight: bold;
+}
+
+.footer-right li,
+.footer-right p {
+  text-align: right;
+}
+
+.footer-right a {
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer-center p {
+  text-align: center;
+}
+
+.footer-logo {
+  display: block;
+  max-width: 100px;
+  height: auto;
+  margin: 0 auto 10px;
+}
+
+.footer-logo img {
+  display: block;
+  max-width: 80px;
+  height: auto;
 }
 
 
 /************************************************************************/
-/*FOR HEADERL MEDIA QUERIES  */
+/*  MEDIA QUERIES  */
 /************************************************************************/
-/******AND**********************************************************/
-/************************************************************************/
-/*FOR OWL CAROUSEL MEDIA QUERIES for SLIDER   */
-/************************************************************************/
+
 @media screen and (max-width: 991px){
   /*HEADER */
   .company-name {
@@ -716,6 +723,14 @@ footer{
   .item{
       height: 300px;
   }
+
+  /* FOOTER */
+  .footer-left p,
+  .footer-right li,
+  .footer-right p {
+    text-align: center;
+}
+
 
 }@media screen and (max-width: 600px){
   /*HEADER */
