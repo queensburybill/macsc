@@ -3,7 +3,7 @@
 	<!-- If you want to insert code from a separate file into this file, check out
 	this video at around min. 9 or 10: https://www.youtube.com/watch?v=e8nJMopiH2Q&t=3s -->
 	
-	</div>
+	</div> <!-- .container -->
 
 		<!-- BEGIN OWL CAROUSEL2 HTML SETUP -->
 		<div class="slider-wrapper cap-container">
@@ -49,22 +49,22 @@
 			</div>
 		</div>
 
-	  <div class="clearfix"></div>
+	  	<div class="clearfix"></div>
 
 	
-	<div class="container">	
+		<div class="container">	
 
-		<div class="row mx-0">
+			<div class="row mx-0">
 
-			<br>
-			
-			<div class="col-xs-12 who-we-are">
+				<br>
+				
+				<div class="col-xs-12 who-we-are">
 
-				<?php the_content(); ?>
+					<?php the_content(); ?>
+
+				</div>
 
 			</div>
-
-		</div>
 
 	
 <?php get_footer(); ?>
