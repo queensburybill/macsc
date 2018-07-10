@@ -23,7 +23,7 @@ html,body {margin: 0;}
 
 * {
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Montserrat, Arial, sans-serif;
     /* border: 1px #000 solid; */
 }
 
@@ -48,77 +48,138 @@ hr {
 /* ------------------------------------------- */
 /* ------------------------------------------- */
 
-/*.header {
-	padding: 0 -15px;
-}*/
-
-/*.rowfix {
-	margin-left: 0;
-	margin-right: 0;
-}*/
-
-.logo {
-	display: block;
-    max-width: 100px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    /*border: 1px black solid; */
+header{
+	width: 100%;
+	height: 86px;
+	padding-top: 2px;
+	margin: 0 0 36px 0;
+  background: linear-gradient(to right, #e35e01, #f4aa00 40%, #f4aa00 60%, #8FBB26);
 }
 
-.logo img {
-	display: block;
-	margin: 20px auto 10px;
-    max-width: 120px;
-    height: auto;
+
+/*HEADER-LEFT SECTION STYLE */
+/********************************************************  */
+.company-header{
+		width: 100%;
+		height: 86px;
+		margin: 0 0 36px 0;
+		padding-top: 20px;
 }
 
-.company{
-    color: #a08d7c;
-    display: block;
-    margin: 15px auto 5px;
-    /*border: 1px solid black;*/
+.company-name{
+    text-align: left;
+		font-weight: bold;
+		color: #fff;
 }
 
-.company h6 {
-	text-align: center;
+.header-list-contact{
+	 	text-align: left;
+		font-size: 12px;
 }
 
-.righter {
-    float: right;
-    display: block;
-    width: 25%;
-    padding: 0;
-    font-size: 12px;
-    background: #fff;
-    text-decoration: none;
-    border: 1px black solid;
-}
-
-.righter a:hover{
-    color: #a08d7c;
-    text-decoration: none;
-}
-
-.links {
-    float: right;
-    display: block;
+.header-list-address{
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
+		display: block;
 }
 
-.links a{
-	color: #a08d7c;
-    text-align: right;
+a.header-address{
+		color: #333;
+}
+
+a.header-address:hover{
+		color: #fff;
+		text-decoration: none;
+}
+
+
+/*HEADER MIDDLE SECTION STYLE*/
+/*****************************************************************  */
+.header-logo{
+	display: block;
+	max-width: 100px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/*HEADER RIGHT SECTION STYLE  */
+/*******************************************************************  */
+.header-right{
+		width: 100%;
+    height: 86px;
+    margin: 0 0 36px 0;
+		padding-top: 5px;
+		text-align: right;
+}
+
+.header-btn-donate{
+		display: inline-block;
+		/* float: right; */
+		background-color:  #FF9000;
+		border: 2px solid #FF9000;
+		color: #fff;
+		padding: 4px 30px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 14px;
+		/* margin-left: 20px; */
+}
+
+.header-btn-fb{
+		display: inline-block;
+		vertical-align: bottom;
+		text-decoration: none;
 }
 
 #glyph {
-    font-size: 20px;
-    float: right;
     display: block;
+    color: #2d3469;  /*FB color*/
+		margin: 0px 10px;
 }
+
+a.header-btn-donate:hover{
+	background-color: #fff;
+	border: 2px solid #fff;
+	color: #FF9000;
+	text-decoration: none;
+}
+
+i#glyph:hover{
+	color: #3B5998;
+	text-decoration: none;
+}
+
+a.header-btn-fb:hover{
+	text-decoration: none;
+}
+
+
+
+
+/*HEADER HOURS of OPERATION */
+/*******************************************************************  */
+.header-hours{
+	display:inline-block;
+	float: right;
+	padding-top: 3px;
+	padding-right: 10px;
+}
+.header-table{
+	font-size: 12px;
+}
+
+th.header-non-bold{
+	font-weight:normal;
+}
+
+td.left-align-hours{
+	/* text-align: left; */
+}
+
 
 
 /* NAV */
@@ -308,51 +369,144 @@ hr {
 }
 
 
-/* BOOTSTRAP CAROUSEL */
-/* ------------------------------------------- */
-/* ------------------------------------------- */
-
-.carousel-indicators li {
-  width: 8px;
-  height: 8px;
-  border-radius: 100%;
+/********************************************************************** */
+/********OWL CAROUSEL - IMAGE SLIDER STYLES******************************** */
+/********************************************************************** */
+#carousel{
+  float:left;
+  display:block;
+  width:100%;
+  position:relative;
 }
 
-.carousel {
-	overflow: hidden;
-	width: 100%;
+.slider-wrapper{
+  display:block;
+  margin: 0 auto;
+  width:100%;
+  max-width: 1600px; /*image width*/
+  /* max-width:800px; */
 }
 
-.carousel-inner {
-	min-width: 600px;
-	height: 480px;
+.cap-container{
+  position: relative;
 }
 
-.carousel-inner.carousel-item img {
-	overflow: hidden;
-	width: 100%;
+.slider-holder{
+  float: left;
+  width: 100%;
+  display: block;
+  position: relative;
 }
 
-.carousel-caption a {
-	color: #fff;
-	text-decoration: none;
+.item{
+  float:left;
+  display:block;
+  width:100%;
+  height:400px;  /*height of images to be same */
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
 }
 
-.carousel-caption a:hover {
-	color: #89b2df;
+.cap-text-container{
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  background-color: #fff;
+  color: #fff;
+  opacity: 0.7;
 }
 
-@media screen and (max-width: 767px) {
-	.carousel-inner {
-		height: 300px;
+.cap-text{
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 5%; /*caption position*/
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h2.cap-title{
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  width: 100%;
+  text-shadow: 2px 2px #424146;
+}
+
+p.cap-desc{
+  color: #fff;
+  text-align: center;
+  font-size:20px;
+  font-weight: bold;
+  width: 100%;
+  padding: 0px 10px;
+  text-shadow: 2px 2px #424146;
+}
+
+
+/************************************************************************/
+/*FOR HEADERL MEDIA QUERIES  */
+/************************************************************************/
+/******AND**********************************************************/
+/************************************************************************/
+/*FOR OWL CAROUSEL MEDIA QUERIES for SLIDER   */
+/************************************************************************/
+@media screen and (max-width: 1200px){
+	/*HEADER */
+	.company-name {
+			font-size: 0.85em;
 	}
 }
 
-@media screen and (max-width: 401px) {
-	.carousel-inner {
-		height: 220px;
+@media screen and (max-width: 991px){
+  /*HEADER */
+  .company-name {
+      font-size: 0.7em;
+  }
+	.header-list-contact{
+		font-size: 11px;
 	}
-}*/
+
+  /*OWL */
+  .item{
+      height: 350px;
+    }
+
+}@media screen and (max-width: 768px){
+  /*HEADER  */
+	.company-header{
+	  display: none;
+  }
+	.header-right{
+		display: none;
+	}
+
+  /*OWL */
+  .item{
+      height: 300px;
+  }
+
+}@media screen and (max-width: 600px){
+
+  /*QWL  */
+  .item{
+    height: 250px;
+  }
+
+}@media screen and (max-width: 481px){
+
+  /*OWL  */
+  .item{
+    height: 200px;
+  }
+    .cap-text{
+      display: none;
+    }
+}
 
 
 /* EVENTS */
