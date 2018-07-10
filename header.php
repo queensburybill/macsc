@@ -11,65 +11,17 @@
 	<!-- IF you want to differentiate styles in the body on different pages, see Tutorial part 4 @ 14:00 to create custom body classes. https://www.youtube.com/watch?v=pJ4NTBdvyj4&t=321s  -->
 
 	<body>
-
+	<div class="body-wrap"> <!-- This wrapper helps to keep the footer at the bottom of the page -->
 <!-- ===========================================
                         HEADER
      =========================================== -->
 	     <div class="header">
 	     	<div class="logo">
      			<a href="http://localhost:8888/wp-macsc/">
-     				<img src="http://localhost:8888/macsc/wp-content/uploads/2018/07/macsc-logo-2018-clr-whitebg.png">
+     				<img src="http://localhost:8888/wp-macsc/wp-content/uploads/2018/07/macsc-logo-2018-clr-whitebg.png">
      			</a>
      		</div>
-
-<!-- 	     		<div class="company">
-	     			<h6>Mechanicville Area Community Services Center, Inc.</h6>
-	     		</div>
-
-	     		<hr> -->
-					
-<!-- 	     		<div class="righter ml-auto my-3">
-	     			<ul class="links">
-	     				<li><a href="#">Newsletter Sign-up</a></li>
-	     				<li><a href="#">Donate</a></li>
-	     				<li id="glyph"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-	     			</ul>
-	     		</div> -->
-
      	</div>
-<!-- END: header -->
-
-<!-- ===========================================
-                 HEADER - logo on left
-     =========================================== -->
-<!-- 	     <div class="container">
-	     	<div class="row rowfix">
-
-	     		<div class="col-xs-12 col-lg-8">
-		     		<div class="logo my-3 mr-3">
-		     			<a href="http://localhost:8888/wp-macsc/">
-		     				<img src="wp-content/themes/macsc-theme/img/macsc-logo-2018-clr.png">
-		     			</a>
-		     		</div>
-
-		     		<div class="company my-auto">
-		     			<h6>Mechanicville Area Community Services Center, Inc.</h6>
-		     		</div>
-		     	</div>
-					
-				<div class="col-xs-12 col-lg-4">
-		     		<div class="righter ml-auto my-3">
-		     			<ul class="links">
-		     				<li><a href="#">Newsletter Sign-up</a></li>
-		     				<li><a href="#">Donate</a></li>
-		     				<li id="glyph"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-		     			</ul>
-		     		</div>
-	     		</div>
-
-	     	</div>
-	     </div> -->
-<!-- END: header -->
 
 <!-- ===========================================
                         NAVBAR
