@@ -1,11 +1,8 @@
 	
 			</div> <!-- .container -->
 
-			<!-- <div class="footer-fix"></div> --> <!-- helps keep footer at bottom -->
-
 		</div> <!-- .body-wrap -->
 
-		<!-- <div class="container-fluid container-fluid-macsc container-footer"> -->
 			<footer>
 				<div class="signup">
 					<div class="container">
@@ -42,7 +39,6 @@
 					</div> <!-- .row -->
 				</div> <!-- .container -->
 			</footer>
-		<!-- </div> --> <!-- .container-footer -->
 
 		<?php wp_footer(); ?>
 
