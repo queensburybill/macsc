@@ -26,7 +26,7 @@
 }
 
 
-/*  GLOBALS 
+/*  GLOBALS
 /* ------------------------------------------- */
 /* ------------------------------------------- */
 
@@ -93,7 +93,7 @@ hr {
     font-size: 12px;
     background: #fff;
     text-decoration: none;
-    border: 1px black solid; 
+    border: 1px black solid;
 }
 
 .righter a:hover{
@@ -394,6 +394,59 @@ p.cap-desc{
 /* ------------------------------------------- */
 /* ------------------------------------------- */
 
+/*------------FACEBOOK PLUG IN-------------------*/
+
+.fbfeed {
+	border-style:solid;
+	border-width: 2px;
+	border-radius:4px;
+	border-color:#f4aa00;
+	font-size: 12px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1), 0 6px 15px 0 rgba(0,0,0,0.19);
+
+}
+/*---------------------------------------------------------------------------*/
+
+
+/*---------------------INTERIOR PAGE STYLES BEGIN-----------------*/
+
+.int-content {
+	width:100%;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-radius: 6px;
+	line-height: 1.6;
+
+}
+
+.int-content h1,
+.int-content h2,
+.int-content h3,
+.int-content h4,S
+.int-content h5,
+.int-content h6 {
+	padding: 5px 5px 15px 10px;
+
+}
+
+.int-content h2 {
+	font-family: Montserrat;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 25px;
+
+}
+
+.int-content li {
+	padding: 1px;
+	line-height: 1.6;
+
+}
+
+/*--------Who We Are Page Styles---------------*/
+
 .who-we-are h1,
 .who-we-are h2,
 .who-we-are h3,
@@ -402,9 +455,31 @@ p.cap-desc{
 .who-we-are h6 {
     color: #e35e01;
 }
+
+.who-we-are p {
+	text-align: left;
+	padding-left: 24%;
+
+}
+.who-we-are{
+	width: 55%;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom: 10px;
+	background-color: #f6f7ff;
+	color:#070214;
+	border-style:solid;
+	border-width: 1px;
+	border-color:#fddbc3;
+
+}
+
 .wwa-nav-rule {
     background: #e35e01;
 }
+/*-------- -------------------------------------*/
+
+/*--------WHAT WE DO PAGE Styles---------------*/
 
 .what-we-do h1,
 .what-we-do h2,
@@ -412,11 +487,15 @@ p.cap-desc{
 .what-we-do h4,
 .what-we-do h5,
 .what-we-do h6 {
-    color: #f4aa00;
+    color: #934fa2;
+		padding-bottom: 10px;
 }
+
 .wwd-nav-rule {
     background: #f4aa00;
 }
+/*-------- -------------------------------------*/
+/*--------GET HELP Page Styles---------------*/
 
 .get-help h1,
 .get-help h2,
@@ -424,11 +503,15 @@ p.cap-desc{
 .get-help h4,
 .get-help h5,
 .get-help h6 {
-    color: #8FBB26;
+    color: #8fbb26;
+
 }
+
 .gh-nav-rule {
     background: #8FBB26;
 }
+/*-------- -------------------------------------*/
+/*--------GET INVOLVED Page Styles---------------*/
 
 .get-involved h1,
 .get-involved h2,
@@ -438,6 +521,8 @@ p.cap-desc{
 .get-involved h6 {
     color: #ff9000;
 }
+
+
 .gi-nav-rule {
     background: #ff9000;
 }
