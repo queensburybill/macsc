@@ -23,7 +23,7 @@ require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
 function include_google_fonts() {
 	if (!is_admin()) {
-		wp_register_style('google', 'https://fonts.googleapis.com/css?family=Montserrat:300,300i,500,500i,600,600i,700,700i,900,900i', array(), null, 'all');
+		wp_register_style('google', 'https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,900,900i', array(), null, 'all');
 		wp_enqueue_style('google');
 	}
 }

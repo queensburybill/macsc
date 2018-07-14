@@ -34,7 +34,7 @@
 								</div>
 							</div>
 
-							<!-- Indicators -->
+							<!-- Indicators (Bootstrap 4) -->
 							<!-- If you need to troubleshoot the indicators, the Italian guy does his tutorial at around 25:00 at this YouTube URL: https://www.youtube.com/watch?v=0UzwBRLfsbM -->
 
 						<?php $count++; endwhile;

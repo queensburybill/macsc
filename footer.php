@@ -34,7 +34,7 @@
 						<hr>
 						<div class="col-md-4 footer-right">
 							<?php wp_nav_menu( array( 'theme_location' => 'secondary' )); ?>
-							<p><a class="btn btn-secondary btn-donate" href="#">Donate</a></p>
+							<p><a class="btn btn-primary btn-donate" href="#">Donate</a></p>
 						</div>
 					</div> <!-- .row -->
 				</div> <!-- .container -->
