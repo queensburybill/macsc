@@ -1,27 +1,29 @@
-<?php 
+<?php
 
 // Template Name: Page Calendar
+/**
+Copied from the wp-content/plugins/the-events-calendar/src/views/default-template.php
+ * Default Events Template
+ * This file is the basic wrapper template for all the views if 'Default Events Template'
+ * is selected in Events -> Settings -> Template -> Events Template.
+ *
+ * Override this template in your own theme by creating a file at [your-theme]/tribe-events/default-template.php
+ *
+ * @package TribeEventsCalendar
+ * @version 4.6.19
+ *
+ */
 
-get_header(); ?>
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
 
-	<?php
-
-	// <!-- This is the post loop -->
-	if ( have_posts() ):
-		while( have_posts() ): the_post(); ?>
-
-			<div class="row mx-0">
-					
-				<div class="col-xs-12 calendar int-content">
-
-					<?php the_content(); ?>
-
-				</div>
-
-			</div> <!-- close row -->
-
-		<?php endwhile;
-	endif;
-	?>	
-
-<?php get_footer(); ?>
+get_header();
+?>
+<main id="tribe-events-pg-template" class="tribe-events-pg-template calendar">
+	<?php tribe_events_before_html(); ?>
+	<?php tribe_get_view(); ?>
+	<?php tribe_events_after_html(); ?>
+</main> <!-- #tribe-events-pg-template -->
+<?php
+get_footer();

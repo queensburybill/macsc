@@ -1,11 +1,8 @@
 	
 			</div> <!-- .container -->
 
-			<!-- <div class="footer-fix"></div> --> <!-- helps keep footer at bottom -->
-
 		</div> <!-- .body-wrap -->
 
-		<!-- <div class="container-fluid container-fluid-macsc container-footer"> -->
 			<footer>
 				<div class="signup">
 					<div class="container">
@@ -19,7 +16,10 @@
 					<div class="row">
 						<div class="col-md-4 footer-left">
 							<p><span>PHONE</span><br>518 664 8322</p>
-							<p><span>ADDRESS</span><br>PO Box 30<br>6 South Main St<br>Mechanicville, NY 12118</p>
+							<p><span>ADDRESS </span>
+								<a href="https://www.google.com/maps/place/Mechanicville+Area+Community+Services/@42.902585,-73.6888737,17z/data=!3m1!4b1!4m5!3m4!1s0x89de17c7bce17ce7:0x953f8c3d9fdb7a3e!8m2!3d42.902585!4d-73.686685?hl=en"
+								target="_blank">view map</a>
+	                  		<br>PO Box 30<br>6 South Main St<br>Mechanicville, NY 12118</p>
 							<p><span>HOURS</span><br>Mon-Fri: &nbsp;9am-5pm<br>Sat &amp; Sun: &nbsp;Closed</p>
 						</div>
 						<hr>
@@ -34,12 +34,11 @@
 						<hr>
 						<div class="col-md-4 footer-right">
 							<?php wp_nav_menu( array( 'theme_location' => 'secondary' )); ?>
-							<p><a class="btn btn-secondary btn-donate" href="#">DONATE</a></p>
+							<p><a class="btn btn-primary btn-donate" href="#">Donate</a></p>
 						</div>
 					</div> <!-- .row -->
 				</div> <!-- .container -->
 			</footer>
-		<!-- </div> --> <!-- .container-footer -->
 
 		<?php wp_footer(); ?>
 

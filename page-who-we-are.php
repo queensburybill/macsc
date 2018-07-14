@@ -11,8 +11,6 @@ get_header(); ?>
 		while( have_posts() ): the_post(); ?>
 
 			<div class="row mx-0">
-
-				<br>
 					
 				<div class="col-xs-12 who-we-are int-content">
 
