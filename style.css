@@ -142,7 +142,7 @@ a.header-address:hover{
     text-decoration: none;
 }
 
-      .header-left {
+/*      .header-left {
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
@@ -174,7 +174,7 @@ a.header-address:hover{
         color: #fff;
         line-height: 1.3;
         margin-bottom: 8px;
-      }
+      }*/
 
 /*HEADER MIDDLE SECTION STYLE*/
 /*****************************************************************  */
@@ -196,7 +196,7 @@ a.header-address:hover{
   margin-right: auto;
 }
 
-    .header-logo-alt{
+/*    .header-logo-alt{
       position: relative;
       display: block;
       width: 70px;
@@ -213,7 +213,7 @@ a.header-address:hover{
       margin-left: auto;
       margin-right: auto;
     }
-
+*/
 /*HEADER RIGHT SECTION STYLE  */
 /*******************************************************************  */
 .header-right{
@@ -222,7 +222,7 @@ a.header-address:hover{
     text-align: right;
 }
 
-      .header-right-alt {
+/*      .header-right-alt {
         display: flex;
         flex-direction: row;
         height: 86px;
@@ -253,7 +253,7 @@ a.header-address:hover{
       .header-right-alt a:hover {
         color: #fff;
         text-decoration: underline;
-      }
+      }*/
 
 .btn-donate {
   font-size: 14px;
@@ -289,9 +289,8 @@ a.header-btn-fb:hover{
   text-decoration: none;
 }
 
-.header-logo-responsive {
+/*.header-logo-responsive {
   display: block;
-  /*float: left;*/
   max-width: 56px;
   height: auto;
   margin: 5px auto 15px;
@@ -303,7 +302,7 @@ a.header-btn-fb:hover{
   max-width: 56px;
   height: auto;
   margin: auto;
-}
+}*/
 
 /*HEADER HOURS of OPERATION */
 /*******************************************************************  */
@@ -764,8 +763,6 @@ footer {
   display: block;
   width: 100%;
     background: #eaa91a;
-    background: #b4a99a;
-    background: #eaa91a;
 /*    background: -webkit-linear-gradient(left, #d25e0d, #eaa91a 40%, #eaa91a 60%, #88a224);
     background: -o-linear-gradient(left, #d25e0d, #eaa91a 40%, #eaa91a 60%, #88a224);
     background: linear-gradient(to right, #d25e0d, #eaa91a 40%, #eaa91a 60%, #88a224);*/
@@ -917,16 +914,13 @@ footer hr {
 
 @media screen and (max-width: 991px){
   /*HEADER */
- /* .company-name {
-      font-size: 30px;
-  }*/
-  .header-left {
+/*  .header-left {
     display: none;
-  }
+  }*/
 
-  .header-left-alt {
+/*  .header-left-alt {
     display: flex;
-  }
+  }*/
 
   /*OWL */
   .item{
@@ -955,7 +949,7 @@ footer hr {
     height: 77px;
   }
 
-          .header-logo-alt{
+/*          .header-logo-alt{
             width: 56px;
             height: 56px;
           }
@@ -975,7 +969,7 @@ footer hr {
 
           .header-right-alt {
             display: none;
-          }
+          }*/
 
   .company-header,
   .header-right {

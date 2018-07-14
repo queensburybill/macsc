@@ -19,7 +19,7 @@
 	      <div class="row">
 			  <!-- *************** HEADER LARGE SCREENS *************** -->
 	          <!--HEADER LEFT SIDE  -->
-<!-- 	          <div class="col-md-5 company-header">
+	          <div class="col-md-5 company-header">
 	            <h6 class="company-name">Mechanicville Area Community Service Center</h6>
 	            <div class="header-list-contact">
 	              <ul class="header-list-address">
@@ -29,26 +29,17 @@
 	                </li>
 	              </ul>
 	            </div>
-	          </div> -->
-	          <div class="col-md-5 header-left">
-	          	<p>Mechanicville Area Community Services Center</p>
-	          </div>
-	          <div class="col-md-5 header-left-alt">
-	          	<p>Mechanicville Area<br>Community Services Center</p>
 	          </div>
 
-	          <!--HEADER MIDDLE SIDE  -->
+	          <!--  HEADER MIDDLE  -->
 	          <div class="col-md-2">
 	          	<div class="header-logo">
 		            <a href="#"><img src="http://162.144.28.82/~mechanr4/wp-content/uploads/2018/07/macsc-logo-2018-clr-whitebg.png" alt="macsclogo"></a>
 	            </div>
-<!-- 	          	<div class="header-logo-alt">
-		            <a href="#"><img src="http://162.144.28.82/~mechanr4/wp-content/uploads/2018/07/macsc-logo-2018-white.png" alt="macsclogo"></a>
-	            </div> -->
 	          </div>
 
 	          <!--HEADER RIGHT SIDE  -->
-<!-- 	          <div class="col-md-5 header-right">
+	          <div class="col-md-5 header-right">
 	              <a href="#" class="btn btn-secondary btn-donate">Donate</a>
 	              <a href="https://www.facebook.com/MechanicvilleCommunityCenter/" class="header-btn-fb" target="_blank"><i class="fab fa-facebook-square fa-2x" id="glyph"></i></a>
 
@@ -60,13 +51,7 @@
 	                  <tr><th class="header-non-bold">Sat&nbsp;&amp;&nbsp;Sun&nbsp;:</th><td class="left-align-hours">&nbsp;Closed</td></tr>
 	                </table>
 	              </div>
-		      </div> -->
-              <div class="col-md-5 header-right-alt">
-              	<ul>
-              		<li><a href="#">Donate</a></li>
-              		<li><a href="#">Facebook</a><span></span></li>
-              	</ul>
-              </div>
+		      </div>
 	        <!--END OF HEADER RIGHT SIDE  -->
 
 		      <div class="clearfix"></div>
