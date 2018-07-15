@@ -19,17 +19,10 @@
 	      <div class="row">
 			  <!-- *************** HEADER LARGE SCREENS *************** -->
 	          <!--HEADER LEFT SIDE  -->
-	          <div class="col-md-5 company-header">
-	            <h6 class="company-name">Mechanicville Area Community Service Center</h6>
-	            <div class="header-list-contact">
-	              <ul class="header-list-address">
-	                <li>
-	                  <a href="https://www.google.com/maps/place/Mechanicville+Area+Community+Services/@42.902585,-73.6888737,17z/data=!3m1!4b1!4m5!3m4!1s0x89de17c7bce17ce7:0x953f8c3d9fdb7a3e!8m2!3d42.902585!4d-73.686685?hl=en"
-	                  target="_blank" class="header-address">6 South Main St. Mechanicville, NY 12118 | (518) 664-8322</a>
-	                </li>
-	              </ul>
-	            </div>
-	          </div>
+						<div class="col-sm-5 company-header">
+              <h6 class="company-name">Mechanicville Area Community Service Center, Inc.</h6>
+              <h5 class="company-name-macsc">MACSC</h5>
+            </div>
 
 	          <!--  HEADER MIDDLE  -->
 	          <div class="col-md-2">
@@ -40,17 +33,13 @@
 
 	          <!--HEADER RIGHT SIDE  -->
 	          <div class="col-md-5 header-right">
-	              <a href="#" class="btn btn-secondary btn-donate">Donate</a>
-	              <a href="https://www.facebook.com/MechanicvilleCommunityCenter/" class="header-btn-fb" target="_blank"><i class="fab fa-facebook-square fa-2x" id="glyph"></i></a>
+	              <!-- <a href="#" class="btn btn-secondary btn-donate">Donate</a> -->
+								<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_flow&SESSION=6sXBJIKZkekxXXIPNWjUGQIjvmby3zs7pFXL9vdLD40LpttLS-Sv-4QQecK&dispatch=5885d80a13c0db1f8e263663d3faee8db8175432b4df92754f4b4adb5a123d61&rapidsState=Donation__DonationFlow___StateDonationBilling&rapidsStateSignature=ac88b521ff0a05fc69d256f6657a35b15288a472" target="_blank" class="header-btn-donate">Donate</a>
+                <a href="https://www.facebook.com/MechanicvilleCommunityCenter/" target="_blank" class="header-facebook">Facebook</a>
+                <a href="https://www.facebook.com/MechanicvilleCommunityCenter/" target="_blank" class="header-btn-fb"><i class="fab fa-facebook-square fa-sm" id="glyph"></i></a>
 
-	              <div class="clearfix"></div>
+								<div class="clearfix"></div>
 
-	              <div class="header-hours">
-	                <table class="header-table">
-	                  <tr><th class="header-non-bold">Mon&nbsp;-&nbsp;Fri&nbsp;:</th><td class="left-align-hours">&nbsp;9am-5pm</td></tr>
-	                  <tr><th class="header-non-bold">Sat&nbsp;&amp;&nbsp;Sun&nbsp;:</th><td class="left-align-hours">&nbsp;Closed</td></tr>
-	                </table>
-	              </div>
 		      </div>
 	        <!--END OF HEADER RIGHT SIDE  -->
 
@@ -64,7 +53,7 @@
                         NAVBAR
      =========================================== -->
 
-<!-- 	Adding a bootstrap menu is covered in the 27th minute of 
+<!-- 	Adding a bootstrap menu is covered in the 27th minute of
 		the tutorial: https://www.youtube.com/watch?v=OSYbTkzuyDg&t=4218s -->
 
 		<div class="container-fluid-macsc">
@@ -80,9 +69,9 @@
 							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primary-nav">
 								<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
 							</button>
-				
+
 							<!-- See the Walker Class tutorial here: https://www.youtube.com/watch?v=ArEmwJV6M7s -->
-								<?php wp_nav_menu( array( 
+								<?php wp_nav_menu( array(
 									'theme_location'	=> 'primary',
 									'menu' 				=> 'Primary Header Navigation',
 						            'depth'             => 2,

@@ -23,7 +23,7 @@
 .btn-primary {
   background-color: #d25e0d;
   border-color: #d25e0d
-} 
+}
 
 .btn-secondary {
   background-color: #9f6298;
@@ -96,7 +96,7 @@ header{
 /*HEADER-LEFT SECTION STYLE */
 /********************************************************  */
 .company-header{
-    padding-top: 20px;
+    padding-top: 55px;
 }
 
 h6.company-name{
@@ -109,6 +109,12 @@ h6.company-name{
     color: #fff;
 }
 
+.company-name-macsc{
+		display: none;
+		text-align: left;
+		color: #fff;
+}
+
 .company-name-responsive {
   position: relative;
   display: none;
@@ -119,28 +125,6 @@ h6.company-name{
 .company-name-responsive p {
   color: #fff;
   width: 80px;
-}
-
-.header-list-contact{
-    text-align: left;
-    font-size: 13px;
-}
-
-.header-list-address{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: block;
-}
-
-a.header-address{
-    color: #333;
-    font-weight: normal;
-}
-
-a.header-address:hover{
-    color: #fff;
-    text-decoration: none;
 }
 
 
@@ -169,11 +153,25 @@ a.header-address:hover{
 /*******************************************************************  */
 .header-right{
     width: 100%;
-    padding-top: 5px;
+    padding-top: 55px;
     text-align: right;
 }
 
-.btn-donate {
+
+a.header-btn-donate{
+		display: inline-block;
+		color: #fff;
+		padding: 4px 30px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 14px;
+}
+a.header-btn-donate:hover{
+		color: #fff;
+		text-decoration: none;
+}
+
+/* .btn-donate {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: .5px;
@@ -184,50 +182,42 @@ a.header-address:hover{
 a.btn-donate:hover {
   background-color: #b34b04;
   border-color: #b34b04;
+} */
+
+a.header-facebook{
+		display: inline-block;
+		color: #fff;
+		/* padding: 4px 30px; */
+		text-align: center;
+		text-decoration: none;
+		font-size: 14px;
+}
+a.header-facebook:hover{
+		color:  #fff;
+		text-decoration: none;
 }
 
-.header-btn-fb{
-    display: inline-block;
-    vertical-align: middle;
-    text-decoration: none;
+
+a.header-btn-fb{
+		display: inline-block;
+		text-decoration: none;
 }
+a.header-btn-fb:hover{
+		text-decoration: none;
+}
+
 
 #glyph {
-    display: block;
-    color: #3B5998;  /*FB color*/
-    margin: 0px 10px;
+    display: inline-block;
+    color: #2d3469;  /*FB color*/
+		/* margin: 0px 10px; */
 }
 
 i#glyph:hover{
-    color: #2d3469;
-    text-decoration: none;
+	color: #3B5998;
+	text-decoration: none;
 }
 
-a.header-btn-fb:hover{
-  text-decoration: none;
-}
-
-/*HEADER HOURS of OPERATION */
-/*******************************************************************  */
-.header-hours{
-  display:inline-block;
-  float: right;
-  padding-top: 3px;
-  padding-right: 10px;
-}
-.header-table{
-  font-size: 12px;
-}
-
-th.header-non-bold{
-  font-weight:normal;
-  color: #333;
-}
-
-td.left-align-hours{
-  color: #333;
-  /* text-align: left; */
-}
 
 /* NAV */
 /* ------------------------------------------- */
@@ -876,6 +866,18 @@ footer hr {
 /************************************************************************/
 /*  MEDIA QUERIES  */
 /************************************************************************/
+@media screen and (max-width: 1200px){
+	/*HEADER */
+
+	.company-name-macsc{
+			display: block;
+			text-align: center;
+	}
+  .company-name {
+      /* font-size: 0.7em; */
+			display: none;
+  }
+}
 
 @media screen and (max-width: 991px){
   /*OWL */
