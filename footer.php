@@ -25,8 +25,8 @@
 						<hr>
 						<div class="col-md-4 footer-center">
 					     	<div class="footer-logo">
-				     			<a href="http://localhost:8888/wp-macsc/">
-				     				<img src="http://localhost:8888/wp-macsc/wp-content/uploads/2018/07/macsc-logo-2018-white.png">
+				     			<a href="http://localhost:8888/macsc/">
+				     				<img src="http://162.144.28.82/~mechanr4/wp-content/uploads/2018/07/macsc-logo-2018-white.png">
 				     			</a>
 				     		</div>
 			     			<p>Mechanicville Area<br>Community Services Center</p>
@@ -44,3 +44,5 @@
 
 	</body>
 </html>
+
+[facebook-page href="https://www.facebook.com/MechanicvilleCommunityCenter/" tabs="timeline"]
