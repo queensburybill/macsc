@@ -72,7 +72,12 @@ function macsc_theme_setup() {
 
 	register_nav_menus(array(
 		'primary' => 'Primary Header Navigation',
-		'secondary' => 'Footer Navigation'
+		'secondary' => 'Footer Navigation',
+		'site-map-who-we-are'  => 'Who We Are',
+		'site-map-what-we-do'  => 'What We Do',
+		'site-map-get-help'  => 'Get Help',
+		'site-map-get-involved'  => 'Get Involved',
+		'site-map-uncategorized'  => 'Uncategorized'
 	));
 }
 
@@ -84,6 +89,26 @@ add_action('init', 'macsc_theme_setup');
 // ====================================
 add_theme_support('post-thumbnails');
 
+
+// ====================================
+//  WIDGET FUNCTION
+// ====================================
+// See tuturial: https://www.youtube.com/watch?v=aSXitOevqA0&t=69s
+// function macsc_widget_setup() {
+// 	register_sidebar(
+// 		array(
+// 			'name'  => 'Facebook',
+// 			'id'    => 'facebook',
+// 			'class' => 'facebook-feed',
+// 			'before_widget' => '<li id="%1$s" class="widget %2$s">',
+// 			'after_widget'  => '</li>',
+// 			'before_title'  => '<h2 class="widgettitle">',
+// 			'after_title'   => '</h2>'
+// 		)
+// 	);
+// }
+
+// add_action('widgets_init', 'macsc_widget_setup');
 
 // ====================================
 //  CUSTOM POST-TYPES
