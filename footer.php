@@ -25,7 +25,7 @@
 						<hr>
 						<div class="col-md-4 footer-center">
 					     	<div class="footer-logo">
-				     			<a href="http://localhost:8888/macsc/">
+				     			<a href="http://162.144.28.82/~mechanr4/">
 				     				<img src="http://162.144.28.82/~mechanr4/wp-content/uploads/2018/07/macsc-logo-2018-white.png">
 				     			</a>
 				     		</div>
@@ -34,7 +34,7 @@
 						<hr>
 						<div class="col-md-4 footer-right">
 							<?php wp_nav_menu( array( 'theme_location' => 'secondary' )); ?>
-							<p><a class="btn btn-primary btn-donate" href="#">Donate</a></p>
+							<p><a class="btn btn-primary btn-donate" href="https://www.paypal.com/cgi-bin/webscr?cmd=_flow&SESSION=6sXBJIKZkekxXXIPNWjUGQIjvmby3zs7pFXL9vdLD40LpttLS-Sv-4QQecK&dispatch=5885d80a13c0db1f8e263663d3faee8db8175432b4df92754f4b4adb5a123d61&rapidsState=Donation__DonationFlow___StateDonationBilling&rapidsStateSignature=ac88b521ff0a05fc69d256f6657a35b15288a472" target="_blank">Donate</a></p>
 						</div>
 					</div> <!-- .row -->
 				</div> <!-- .container -->
@@ -44,5 +44,3 @@
 
 	</body>
 </html>
-
-[facebook-page href="https://www.facebook.com/MechanicvilleCommunityCenter/" tabs="timeline"]

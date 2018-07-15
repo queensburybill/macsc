@@ -27,7 +27,7 @@
 	          <!--  HEADER MIDDLE  -->
 	          <div class="col-md-2">
 	          	<div class="header-logo">
-		            <a href="#"><img src="http://162.144.28.82/~mechanr4/wp-content/uploads/2018/07/macsc-logo-2018-clr-whitebg.png" alt="macsclogo"></a>
+		            <a href="http://162.144.28.82/~mechanr4/"><img src="http://162.144.28.82/~mechanr4/wp-content/uploads/2018/07/macsc-logo-2018-clr-whitebg.png" alt="macsclogo"></a>
 	            </div>
 	          </div>
 
