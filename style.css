@@ -84,12 +84,6 @@ header{
   margin: 0 0 24px 0;
   background: #b4a99a;
   background: #eaa91a;
-/*  background: -webkit-linear-gradient(left, #d25e0d, #eaa91a 40%, #eaa91a 60%, #88a224);
-  background: -o-linear-gradient(left, #d25e0d, #eaa91a 40%, #eaa91a 60%, #88a224);
-  background: linear-gradient(to right, #d25e0d, #eaa91a 40%, #eaa91a 60%, #88a224);*/
-/*  background: -webkit-linear-gradient(left, #ccc, #ddd 20%, #fff 50%, #ddd 80%, #ccc);
-  background: -o-linear-gradient(left, #ccc, #ddd 30%, #fff 50%, #ddd 70%, #ccc);
-  background: linear-gradient(to right, #ccc, #ddd 30%, #fff 50%, #ddd 70%, #ccc);*/
 }
 
 
@@ -171,19 +165,6 @@ a.header-btn-donate:hover{
 		text-decoration: none;
 }
 
-/* .btn-donate {
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: .5px;
-  padding: 2.5px 20px;
-  vertical-align: middle;
-}
-
-a.btn-donate:hover {
-  background-color: #b34b04;
-  border-color: #b34b04;
-} */
-
 a.header-facebook{
 		display: inline-block;
 		color: #fff;
@@ -209,12 +190,14 @@ a.header-btn-fb:hover{
 
 #glyph {
     display: inline-block;
-    color: #2d3469;  /*FB color*/
+    color: white;
+/*    color: #2d3469;*/  /*FB color*/
 		/* margin: 0px 10px; */
 }
 
 i#glyph:hover{
-	color: #3B5998;
+  color: #ddd;
+/*	color: #3B5998;*/
 	text-decoration: none;
 }
 
@@ -699,7 +682,7 @@ p.cap-desc{
   font-family: helvetica, sans-serif;
   font-weight: bold;
   font-size: 15px;
-  color: #d25e0d;
+  color: #eaa91a;
   text-decoration: none;
 }
 
